@@ -70,6 +70,9 @@ body {
 	border-radius: 150px;
 	margin-top: 3em;
 	filter: saturate(0);
+	-webkit-filter: saturate(0);
+	-o-filter: saturate(0);
+	-moz-filter: saturate(0);
 }
 
 #bio-summary {
