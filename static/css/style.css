@@ -99,28 +99,3 @@ body {
 #social-menu a:hover, #social-menu a:focus {
 	color: #ff3366;
 }
-
-/*
-> MEDIUM font awesome dirty fix
-*/
-@font-face {
-    font-family:'medium-icons';
-    src:url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.RKi6ejayKSZJh0OTshbkRg.eot");
-    src:url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.RKi6ejayKSZJh0OTshbkRg.eot?#iefix") format("embedded-opentype"),
-    url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.0qVySHWi3WfG-NkYbdM9ng.woff") format("woff"),
-    url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.mLsoGQwSP5s8oeib362mtQ.ttf") format("truetype"),
-    url("https://s3.amazonaws.com/medium-static/_/fp/fonts/medium-icons.YXqW0c1ibQa2SAL9POl_bw.svg?#medium-icons") format("svg");
-    font-weight:normal;font-style:normal; }
-.fa-medium:before {
-    content: "\f12a";
-    font-family: 'medium-icons';
-    font-weight: normal;
-    font-style: normal;
-    speak: none;
-    text-decoration: none;
-    text-transform: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    font-size: 1em;
-    position: relative;
-    bottom:-0.15em; }
