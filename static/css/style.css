@@ -85,12 +85,18 @@ body {
 	float: right;
 }
 
+#my-logo{
+	width: 120px;
+	margin-top: 70px;
+	padding-right: 5em; 
+}
+
 #bio-summary {
 	font-family: 'Lato', sans-serif;
 	font-weight: 100;
 	font-style: italic;
 	font-size: 1.2em;
-	margin-top: 10em;
+	margin-top: 3.5em;
 	letter-spacing: 2px;
 	width: 70%;
 	margin-right: auto;
@@ -99,7 +105,7 @@ body {
 }
 
 #social-menu {
-	margin-top: 12em;
+	margin-top: 7em;
 }
 
 #social-menu a {
