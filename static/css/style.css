@@ -53,49 +53,61 @@ table {
 */
 
 body {
-	background-color: #191919;
-	color: #ff3366;
+	background: url("../img/background-pat.png") no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	color: #fff;
 	text-align: center;
-	border-top: 4px solid #ff3366;
 }
 
 #greeting {
-	font-family: 'Pacifico', cursive;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
 	font-size: 3em;
 	margin-top: 1.5em;
 }
 
-#profile-pic {
-	width: 150px;
-	border-radius: 150px;
-	margin-top: 3em;
-	filter: saturate(0);
-	-webkit-filter: saturate(0);
-	-o-filter: saturate(0);
-	-moz-filter: saturate(0);
+#separator1 {
+	height: 1px;
+	background-color: #fff;
+	margin-top: -1.5em;
+	width: 34em;
+	float: left;
+}
+
+#separator2 {
+	height: 1px;
+	background-color: #fff;
+	margin-top: -1.5em;
+	width: 34em;
+	float: right;
 }
 
 #bio-summary {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-style: italic;
 	font-size: 1.2em;
-	margin-top: 2.5em;
+	margin-top: 10em;
 	letter-spacing: 2px;
 	width: 70%;
 	margin-right: auto;
 	margin-left: auto;
-	line-height: 26px;
+	line-height: 22px;
 }
 
 #social-menu {
-	margin-top: 6em;
+	margin-top: 12em;
 }
 
 #social-menu a {
-	color: #f7f7f7;
-	margin-right: 1.2em;
-	margin-left: 1.2em;
+	color: #795154;
+	margin-right: 2em;
+	margin-left: 2em;
 }
 
 #social-menu a:hover, #social-menu a:focus {
-	color: #ff3366;
+	color: #fff;
 }
