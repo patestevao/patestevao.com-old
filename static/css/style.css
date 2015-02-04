@@ -58,7 +58,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	color: #fff;
+	color: #ffffff;
 	text-align: center;
 }
 
@@ -69,20 +69,23 @@ body {
 	margin-top: 1.5em;
 }
 
-#separator1 {
-	height: 1px;
-	background-color: #fff;
-	margin-top: -1.5em;
-	width: 30em;
-	float: left;
-}
+@media (min-width: 30em) {
 
-#separator2 {
-	height: 1px;
-	background-color: #fff;
-	margin-top: -1.5em;
-	width: 30em;
-	float: right;
+	#separator1 {
+		height: 1px;
+		background-color: #fff;
+		margin-top: -1.5em;
+		width: 30em;
+		float: left;
+	}
+
+	#separator2 {
+		height: 1px;
+		background-color: #ffffff;
+		margin-top: -1.5em;
+		width: 30em;
+		float: right;
+	}
 }
 
 #my-logo{
