@@ -53,7 +53,7 @@ table {
 */
 
 body {
-	background-color: #fffefb;
+	background-color: #fcfcfc;
 	color: #ff3366;
 	text-align: center;
 	border-top: 4px solid #ff3366;
@@ -64,25 +64,6 @@ body {
 	/*font-family: 'Pacifico', cursive;*/
 	font-size: 3rem;
 	margin-top: 1.2em;
-}
-
-@media (min-width: 30em) {
-
-	#separator1 {
-		height: 1px;
-		background-color: #fff;
-		margin-top: -1.5em;
-		width: 30em;
-		float: left;
-	}
-
-	#separator2 {
-		height: 1px;
-		background-color: #ffffff;
-		margin-top: -1.5em;
-		width: 30em;
-		float: right;
-	}
 }
 
 #my-logo{
