@@ -87,12 +87,19 @@ body {
 
 	#social-menu {
 		margin-top: 6em;
+		margin-left: 21%;
 	}
 
-	#social-menu a {
-		color: #ff3366;
+	#social-menu li a {
+		height: 70px;
+		width: 70px;
+		border: 2px solid #ff3366;
+		border-radius: 10%;
+		background-color: #fcfcfc;
+		float: left;
 		margin-right: 2em;
 		margin-left: 2em;
+		color: #ff3366;
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  	-webkit-transform: translateZ(0);
@@ -106,6 +113,10 @@ body {
 	  	transition-duration: 0.3s;
 	  	-webkit-transition-property: transform;
 	  	transition-property: transform;
+	}
+
+	#social-menu li a div{
+		padding-top: 24%;
 	}
 }
 
@@ -141,10 +152,16 @@ body {
 	}
 
 	#social-menu a {
+		height: 50px;
+		width: 50px;
+		border: 2px solid #ff3366;
+		border-radius: 10%;
+		background-color: #fcfcfc;
+		float: left;
 		color: #ff3366;
-		margin-right: 5%;
-		margin-left: 5%;
+		margin-left: 12%;
 		margin-top: 4%;
+		margin-bottom: 5%;
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  	-webkit-transform: translateZ(0);
@@ -158,6 +175,10 @@ body {
 	  	transition-duration: 0.3s;
 	  	-webkit-transition-property: transform;
 	  	transition-property: transform;
+	}
+
+	#social-menu li a div{
+	padding-top: 14%;
 	}
 }
 
@@ -193,10 +214,15 @@ body {
 	}
 
 	#social-menu a {
+		height: 60px;
+		width: 60px;
+		border: 2px solid #ff3366;
+		border-radius: 10%;
+		background-color: #fcfcfc;
+		float: left;
 		color: #ff3366;
-		margin-right: 7%;
-		margin-left: 7%;
-		margin-top: 4%;
+		margin-left: 12%;
+		margin-top: 6%;
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  	-webkit-transform: translateZ(0);
@@ -210,6 +236,10 @@ body {
 	  	transition-duration: 0.3s;
 	  	-webkit-transition-property: transform;
 	  	transition-property: transform;
+	}
+
+	#social-menu li a div{
+	padding-top: 21%;
 	}
 
 }
@@ -243,12 +273,21 @@ body {
 
 	#social-menu {
 		margin-top: 10%;
+		margin-left: 10%;
 	}
 
 	#social-menu a {
+		height: 70px;
+		width: 70px;
+		border: 2px solid #ff3366;
+		border-radius: 10%;
+		background-color: #fcfcfc;
+		float: left;
 		color: #ff3366;
 		margin-right: 3%;
-		margin-left: 3%;
+		margin-left: 11%;
+		margin-top: 1%;
+		margin-bottom: 3%;
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  	-webkit-transform: translateZ(0);
@@ -264,6 +303,9 @@ body {
 	  	transition-property: transform;
 	}
 
+	#social-menu li a div{
+	padding-top: 24%;
+	}
 }
 
 /* Tablet (portrait) ----------- */
@@ -295,9 +337,16 @@ body {
 
 	#social-menu {
 		margin-top: 15%;
+		margin-left: 4%;
 	}
 
 	#social-menu a {
+		height: 70px;
+		width: 70px;
+		border: 2px solid #ff3366;
+		border-radius: 10%;
+		background-color: #fcfcfc;
+		float: left;
 		color: #ff3366;
 		margin-right: 3%;
 		margin-left: 3%;
@@ -316,6 +365,9 @@ body {
 	  	transition-property: transform;
 	}
 
+	#social-menu li a div{
+	padding-top: 23%;
+	}
 }
 
 /* Tablet (lanscape) ----------- */
@@ -347,9 +399,17 @@ body {
 
 	#social-menu {
 		margin-top: 7%;
+		margin-left: 18%;
+		margin-bottom: 5%;
 	}
 
 	#social-menu a {
+		height: 70px;
+		width: 70px;
+		border: 2px solid #ff3366;
+		border-radius: 10%;
+		background-color: #fcfcfc;
+		float: left;
 		color: #ff3366;
 		margin-right: 3%;
 		margin-left: 3%;
@@ -368,10 +428,14 @@ body {
 	  	transition-property: transform;
 	}
 
+	#social-menu li a div{
+	padding-top: 25%;
+	}
 }
 
 #social-menu a:hover, #social-menu a:focus, #social-menu a:active {
-	color: #2696ff;
+	color: #fcfcfc;
+	background-color: #ff3366;
 	-webkit-transform: scale(1.1);
   	transform: scale(1.1);
 }
