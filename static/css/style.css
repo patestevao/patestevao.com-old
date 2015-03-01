@@ -86,8 +86,9 @@ body {
 	}
 
 	#social-menu {
-		margin-top: 6em;
-		margin-left: 21%;
+		width: 850px;
+		text-align: center;
+		margin: 6em auto;
 	}
 
 	#social-menu li a {
@@ -148,7 +149,9 @@ body {
 	}
 
 	#social-menu {
-		margin-top: 10%;
+		width: 260px;
+		text-align: center;
+		margin: 10% auto; 
 	}
 
 	#social-menu a {
@@ -159,9 +162,9 @@ body {
 		background-color: #fcfcfc;
 		float: left;
 		color: #ff3366;
-		margin-left: 12%;
-		margin-top: 4%;
-		margin-bottom: 5%;
+		margin-left: 9%;
+		margin-top: 9%;
+		margin-bottom: 2%;
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  	-webkit-transform: translateZ(0);
@@ -210,7 +213,14 @@ body {
 	}
 
 	#social-menu {
-		margin-top: 10%;
+		width: 300px;
+		text-align: center;
+		margin: 10% auto;
+	}
+
+	#social-menu ul{
+		list-style: none;
+		padding-left: 0px;
 	}
 
 	#social-menu a {
@@ -221,8 +231,8 @@ body {
 		background-color: #fcfcfc;
 		float: left;
 		color: #ff3366;
-		margin-left: 12%;
-		margin-top: 6%;
+		margin-left: 10%;
+		margin-top: 10%;
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  	-webkit-transform: translateZ(0);
@@ -272,8 +282,14 @@ body {
 	}
 
 	#social-menu {
-		margin-top: 10%;
-		margin-left: 10%;
+		width: 390px;
+		text-align: center;
+		margin: 10% auto;
+	}
+
+	#social-menu ul{
+		list-style: none;
+		padding-left: 0px;
 	}
 
 	#social-menu a {
@@ -336,8 +352,14 @@ body {
 	}
 
 	#social-menu {
-		margin-top: 15%;
-		margin-left: 4%;
+		width: 700px;
+		text-align: center;
+		margin: 7em auto;
+	}
+
+	#social-menu ul{
+		list-style: none;
+		padding-left: 0px;
 	}
 
 	#social-menu a {
@@ -398,9 +420,14 @@ body {
 	}
 
 	#social-menu {
-		margin-top: 7%;
-		margin-left: 18%;
-		margin-bottom: 5%;
+		width: 700px;
+		text-align: center;
+		margin: 7em auto;
+	}
+
+	#social-menu ul{
+		list-style: none;
+		padding-left: 0px;
 	}
 
 	#social-menu a {
@@ -431,6 +458,11 @@ body {
 	#social-menu li a div{
 	padding-top: 25%;
 	}
+}
+
+#social-menu ul{
+	list-style: none;
+	padding-left: 0px; 
 }
 
 #social-menu a:hover, #social-menu a:focus, #social-menu a:active {
