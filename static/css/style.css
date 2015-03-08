@@ -53,22 +53,33 @@ table {
 */
 
 body {
-	background-color: #fcfcfc;
-	color: #ff3366;
+	background-color: #333333;
+	color: #fcfcfc;
 	text-align: center;
-	border-top: 4px solid #ff3366;
 }
 
 /* Desktops and laptops --------- */
 @media only screen and (min-width : 1281px) {
+
+	#banner {
+		background-color: #EF6EA3;
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+		height: 6em;
+		width: 100%;
+		margin-top: 2em;
+	}
+
 	#greeting {
 		font-family: 'Satisfy', cursive;
 		font-size: 3rem;
-		margin-top: 1.2em;
+		vertical-align: middle;
+		padding: 1.6% 0;
+
 	}
 
 	#my-logo {
-		width: 8%;
+		width: 6em;
 		margin-top: 5%;
 		padding-right: 4%; 
 	}
@@ -88,19 +99,19 @@ body {
 	#social-menu {
 		width: 850px;
 		text-align: center;
-		margin: 6em auto;
+		margin: 5em auto;
 	}
 
 	#social-menu li a {
 		height: 70px;
 		width: 70px;
-		border: 2px solid #ff3366;
+		border: 2px solid #EF6EA3;
 		border-radius: 10%;
-		background-color: #fcfcfc;
+		background-color: #333333;
 		float: left;
 		margin-right: 2em;
 		margin-left: 2em;
-		color: #ff3366;
+		color: #EF6EA3;
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  	-webkit-transform: translateZ(0);
@@ -124,10 +135,19 @@ body {
 /* Smartphones (portrait 320x480) ----------- */
 @media only screen and (max-width : 320px) {
 
+	#banner {
+		background-color: #EF6EA3;
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+		height: 4em;
+		width: 100%;
+		margin-top: 1em;
+	}
+
 	#greeting {
 		font-family: 'Satisfy', cursive;
 		font-size: 1.7rem;
-		margin-top: 1em;
+		padding: 6% 0;
 	}
 
 	#my-logo{
@@ -157,11 +177,11 @@ body {
 	#social-menu a {
 		height: 50px;
 		width: 50px;
-		border: 2px solid #ff3366;
+		border: 2px solid #EF6EA3;
 		border-radius: 10%;
-		background-color: #fcfcfc;
+		background-color: #333333;
 		float: left;
-		color: #ff3366;
+		color: #EF6EA3;
 		margin-left: 9%;
 		margin-top: 9%;
 		margin-bottom: 2%;
@@ -188,10 +208,19 @@ body {
 /* Smartphones (portrait 360x640) ----------- */
 @media only screen and (min-width: 321px) and (max-width: 470px) {
 
+	#banner {
+		background-color: #EF6EA3;
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+		height: 4em;
+		width: 100%;
+		margin-top: 1em;
+	}
+
 	#greeting {
 		font-family: 'Satisfy', cursive;
 		font-size: 2rem;
-		margin-top: 1em;
+		padding: 5% 0;
 	}
 
 	#my-logo{
@@ -215,7 +244,7 @@ body {
 	#social-menu {
 		width: 300px;
 		text-align: center;
-		margin: 10% auto;
+		margin: 8% auto;
 	}
 
 	#social-menu ul{
@@ -226,13 +255,13 @@ body {
 	#social-menu a {
 		height: 60px;
 		width: 60px;
-		border: 2px solid #ff3366;
+		border: 2px solid #EF6EA3;
 		border-radius: 10%;
-		background-color: #fcfcfc;
+		background-color: #333333;
 		float: left;
-		color: #ff3366;
+		color: #EF6EA3;
 		margin-left: 10%;
-		margin-top: 10%;
+		margin-top: 6%;
 	  	display: inline-block;
 	  	vertical-align: middle;
 	  	-webkit-transform: translateZ(0);
@@ -257,10 +286,19 @@ body {
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 471px) and (max-width: 767px) {
 
+	#banner {
+		background-color: #EF6EA3;
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+		height: 4em;
+		width: 100%;
+		margin-top: 1em;
+	}
+
 	#greeting {
 		font-family: 'Satisfy', cursive;
 		font-size: 2.5rem;
-		margin-top: 1em;
+		padding: 2.3% 0;
 	}
 
 	#my-logo{
@@ -284,7 +322,7 @@ body {
 	#social-menu {
 		width: 390px;
 		text-align: center;
-		margin: 10% auto;
+		margin: 7% auto;
 	}
 
 	#social-menu ul{
@@ -295,14 +333,14 @@ body {
 	#social-menu a {
 		height: 70px;
 		width: 70px;
-		border: 2px solid #ff3366;
+		border: 2px solid #EF6EA3;
 		border-radius: 10%;
-		background-color: #fcfcfc;
+		background-color: #333333;
 		float: left;
-		color: #ff3366;
+		color: #EF6EA3;
 		margin-right: 3%;
 		margin-left: 11%;
-		margin-top: 1%;
+		margin-top: 3%;
 		margin-bottom: 3%;
 	  	display: inline-block;
 	  	vertical-align: middle;
@@ -327,14 +365,23 @@ body {
 /* Tablet (portrait) ----------- */
 @media only screen and (min-width: 768px) and (max-width: 1000px) {
 
+	#banner {
+		background-color: #EF6EA3;
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+		height: 5em;
+		width: 100%;
+		margin-top: 2em;
+	}
+
 	#greeting {
 		font-family: 'Satisfy', cursive;
 		font-size: 3rem;
-		margin-top: 10%;
+		padding: 2.5% 0;
 	}
 
 	#my-logo{
-		width: 15%;
+		width: 12%;
 		margin-top: 12%;
 		padding-right: 4%; 
 	}
@@ -365,11 +412,11 @@ body {
 	#social-menu a {
 		height: 70px;
 		width: 70px;
-		border: 2px solid #ff3366;
+		border: 2px solid #EF6EA3;
 		border-radius: 10%;
-		background-color: #fcfcfc;
+		background-color: #333333;
 		float: left;
-		color: #ff3366;
+		color: #EF6EA3;
 		margin-right: 3%;
 		margin-left: 3%;
 	  	display: inline-block;
@@ -395,14 +442,23 @@ body {
 /* Tablet (lanscape) ----------- */
 @media only screen and (min-width: 1001px) and (max-width: 1280px) {
 
+	#banner {
+		background-color: #EF6EA3;
+		opacity: 0.8;
+		filter: alpha(opacity=80);
+		height: 5em;
+		width: 100%;
+		margin-top: 2em;
+	}
+
 	#greeting {
 		font-family: 'Satisfy', cursive;
 		font-size: 3rem;
-		margin-top: 3%;
+		padding: 1.7% 0;
 	}
 
 	#my-logo{
-		width: 10%;
+		width: 8%;
 		margin-top: 5%;
 		padding-right: 4%; 
 	}
@@ -433,11 +489,11 @@ body {
 	#social-menu a {
 		height: 70px;
 		width: 70px;
-		border: 2px solid #ff3366;
+		border: 2px solid #EF6EA3;
 		border-radius: 10%;
-		background-color: #fcfcfc;
+		background-color: #333333;
 		float: left;
-		color: #ff3366;
+		color: #EF6EA3;
 		margin-right: 3%;
 		margin-left: 3%;
 	  	display: inline-block;
@@ -467,7 +523,7 @@ body {
 
 #social-menu a:hover, #social-menu a:focus, #social-menu a:active {
 	color: #fcfcfc;
-	background-color: #ff3366;
+	background-color: #EF6EA3;
 	-webkit-transform: scale(1.1);
   	transform: scale(1.1);
 }
