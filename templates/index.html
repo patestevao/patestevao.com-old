@@ -3,40 +3,23 @@
 	<div id="banner"><h1 id="greeting">Hi, I'm Patrícia Estevão</h1></div>
 	<div id="separator1"></div>
 	<div id="separator2"></div>
-	<img id="my-picture" src="{{ url_for('static', filename='img/profile.png') }}">
-	<div id="bio-summary">
-		I'm a web designer, copywriter and 
-		<br>
-		Environmental Engineer.
-		<br>
-		Personal status: tech-lover,
-		<br>
-		yoga apprentice and world explorer.
-		<br>
-		Folow my work, my adventures or <a id="mail" href="mailto:contact@patestevao.com">contact me</a>.
+	<div id="main-container">
+		<div id="bio-summary">
+			I'm a web designer, copywriter and 
+			<br>
+			Environmental Engineer.
+			<br>
+			Personal status: tech-lover,
+			<br>
+			yoga apprentice and world explorer.
+			<br>
+			Folow my work, my adventures or <a id="mail" href="mailto:contact@patestevao.com">contact me</a>.
+		</div>
+		<div class="pictures">
+			<a href="https://twitter.com/patestevao"<div class="container" id="my-picture"></div></a>
+			<a href="https://medium.com/@patestevao"<div class="container" id="writing"></div>
+			<a href="https://www.behance.net/patestevao"<div class="container" id="flower"></div>
+			<a href="https://instagram.com/patestevao"<div class="container" id="yoga"></div>
+		</div>
 	</div>
-	<nav id="social-menu">
-		<ul>
-			<li>
-				<a href="//twitter.com/patestevao">
-					<div class="social-icon"><i class="fa fa-2x fa-twitter"></i></div>
-				</a>
-			</li>
-			<li>
-				<a href="//medium.com/@patestevao">
-					<div class="social-icon"><i class="fa fa-2x fa-medium"></i></div>
-				</a>
-			</li>
-			<li>
-				<a href="//behance.net/patestevao">
-					<div class="social-icon"><i class="fa fa-2x fa-behance"></i></div>
-				</a>
-			</li>
-			<li>
-				<a href="//instagram.com/patestevao">
-					<div class="social-icon"><i class="fa fa-2x fa-instagram"></i></div>
-				</a>
-			</li>
-		</ul>
-	</nav>
 {% endblock content %}

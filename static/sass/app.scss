@@ -1,0 +1,72 @@
+@import 'normalize';
+
+$type: Inconsolata, Sans-serif;
+$bg-color: #ffffff;
+$color: #222;
+
+body {
+	color: $color;
+	font-family: $type;
+	background-color: $bg-color;
+	text-align: left;
+
+	#greeting {
+		font-size: 2em;
+		text-align: center;
+	}
+
+	#main-container {
+		position: center;
+	}
+
+	#bio-sumary {
+		max-width: 10em;
+		padding-left: 4em;
+		float: left;
+		border: 1px solid #222;
+
+		#mail {
+			text-decoration: none;
+			color: #f36;
+		}
+
+		#mail:hover, #mail:focus {
+			background-color: #f36;
+			color: $bg-color;
+		}
+
+	}
+
+	.pictures {
+		padding-top: 2em;
+
+		a .container {
+			float: left;
+			margin-left: 15px;
+			width: 15em;
+			height: 12em;
+			border: 2px solid black;
+			background-repeat: no-repeat;
+		    background-attachment: fixed;
+		    background-position: center;
+
+			#my-picture {
+				background-image: url('../img/profile.png');
+			}
+
+			#writing {
+				background-image: url('../img/profile.jpg');
+			}
+
+			#flower {
+				background-image: "{{ url_for('static', filename='img/flower.jpg') }}";
+			}
+
+			#yoga {
+				background-image: "{{ url_for('static', filename='img/yoga.jpg') }}";
+			}
+			}
+		}
+
+		
+	}
