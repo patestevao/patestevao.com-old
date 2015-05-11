@@ -9,64 +9,100 @@ body {
 	font-family: $type;
 	background-color: $bg-color;
 	text-align: left;
+	font-size: 1em;
+}
 
-	#greeting {
-		font-size: 2em;
-		text-align: center;
+#greeting {
+	font-size: 2em;
+	text-align: center;
+	margin-top: 2.5em;
+}
+
+#main-container {
+	position: center;
+}
+
+#bio-summary {
+	font-size: 18px;
+	margin-left: 20.6em;
+	margin-top: 2em;
+	width: 29em;
+	height: 8.2em;
+	float: left;
+	padding: 1em;
+	border: 1px solid #222;
+
+	#mail {
+		text-decoration: none;
+		color: #f36;
 	}
 
-	#main-container {
-		position: center;
+	#mail:hover, #mail:focus {
+		background-color: #f36;
+		color: $bg-color;
 	}
 
-	#bio-sumary {
-		max-width: 10em;
-		padding-left: 4em;
-		float: left;
-		border: 1px solid #222;
+}
 
-		#mail {
-			text-decoration: none;
-			color: #f36;
-		}
+#pictures {
+	padding-top: 2em;
+	margin-top: 7em;
+	height: 40em;
 
-		#mail:hover, #mail:focus {
-			background-color: #f36;
-			color: $bg-color;
-		}
+	a .container {
+		// float: left;
+		margin-left: 10px;
+		width: 15em;
+		height: 12em;
+		//border: 2px solid black;
+		background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    padding-top:23px;
+	    background-position: relative;
+	    background-origin: padding-box;
 
 	}
 
-	.pictures {
-		padding-top: 2em;
-
-		a .container {
-			float: left;
-			margin-left: 15px;
-			width: 15em;
-			height: 12em;
-			border: 2px solid black;
-			background-repeat: no-repeat;
-		    background-attachment: fixed;
-		    background-position: center;
-
-			#my-picture {
-				background-image: url('../img/profile.png');
-			}
-
-			#writing {
-				background-image: url('../img/profile.jpg');
-			}
-
-			#flower {
-				background-image: "{{ url_for('static', filename='img/flower.jpg') }}";
-			}
-
-			#yoga {
-				background-image: "{{ url_for('static', filename='img/yoga.jpg') }}";
-			}
-			}
-		}
-
-		
+	#my-picture {
+		background-image: url('../img/profile.png');
+		//background-position: 36.5em 8.5em;
+		background-size: 15.5em auto;
+		background-origin: border-box;
+		background-attachment: local;
+		margin-left: 53em;
 	}
+
+	#writing {
+		background-image: url('../img/writing.png');
+		position: relative;
+		//background-position: 52.5em 8.5em;
+		background-size: 15.5em auto;
+		display: inline-block;
+		background-origin: border-box;
+		background-attachment: local;
+	}
+
+	#flower {
+		background-image: url('../img/flower.png');
+		position: relative;
+		//background-position: 69em 8.5em;
+		background-size: 15.5em auto;
+		display: inline-block;
+		background-origin: border-box;
+		background-attachment: local;
+	}
+
+	#yoga {
+		background-image: url('../img/yoga.png');
+		position: relative;
+		//background-position: 36.5em 18em;
+		background-size: 15.5em auto;
+		display: inline-block;
+		background-origin: border-box;
+		background-attachment: local;
+	}
+
+	#bottom-line {
+		margin-left: 20em;
+	}
+}
