@@ -380,7 +380,9 @@ body {
   line-height: 1.5em; }
   #bio-summary #mail {
     text-decoration: none;
-    color: #f36; }
+    color: #f36;
+    transition-property: background-color, color;
+    transition-duration: 0.2s; }
   #bio-summary #mail:hover, #bio-summary #mail:focus {
     background-color: #f36;
     color: #ffffff; }
@@ -389,54 +391,48 @@ body {
   padding-top: 2em;
   margin-top: 7em;
   height: 40em; }
-  #pictures a .container {
-    margin-left: 10px;
-    width: 15em;
-    height: 12em;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-top: 23px;
-    background-position: relative;
-    background-origin: padding-box; }
   #pictures a {
-    background: transparent;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out; }
-  #pictures a:hoover {
-    background: rgba(0, 0, 0, 0.75); }
+    text-decoration: none;
+    color: #fff; }
+    #pictures a .container {
+      margin-left: 10px;
+      width: 15em;
+      height: 12em;
+      background-repeat: no-repeat;
+      background-attachment: local;
+      padding-top: 23px;
+      background-origin: border-box;
+      background-size: 15.5em auto; }
+      #pictures a .container .overlay {
+        border: 2px solid #fff;
+        text-align: center;
+        line-height: 1.7em;
+        font-size: 20px;
+        margin-top: 6em;
+        margin-left: 2.5em;
+        width: 6.5em;
+        height: 2em;
+        position: relative;
+        transition-property: background-color, color;
+        transition-duration: 0.3s; }
+    #pictures a .container:hover .overlay {
+      background-color: #fff;
+      color: #f36; }
   #pictures #my-picture {
     background-image: url("../img/profile.png");
-    background-size: 15.5em auto;
-    background-origin: border-box;
-    background-attachment: local;
     margin-left: 53em; }
   #pictures #writing {
     background-image: url("../img/writing.png");
     position: relative;
-    background-size: 15.5em auto;
-    display: inline-block;
-    background-origin: border-box;
-    background-attachment: local; }
+    display: inline-block; }
   #pictures #flower {
     background-image: url("../img/flower.png");
     position: relative;
-    background-size: 15.5em auto;
-    display: inline-block;
-    background-origin: border-box;
-    background-attachment: local; }
+    display: inline-block; }
   #pictures #yoga {
     background-image: url("../img/yoga.png");
     position: relative;
-    background-size: 15.5em auto;
-    display: inline-block;
-    background-origin: border-box;
-    background-attachment: local; }
+    display: inline-block; }
   #pictures #bottom-line {
     margin-left: 20em; }
 
