@@ -393,7 +393,7 @@ body {
   height: 40em; }
   #pictures a {
     text-decoration: none;
-    color: #fff; }
+    color: #f36; }
     #pictures a .container {
       margin-left: 10px;
       width: 15em;
@@ -402,22 +402,23 @@ body {
       background-attachment: local;
       padding-top: 23px;
       background-origin: border-box;
-      background-size: 15.5em auto; }
+      background-size: 15.5em auto;
+      background-position: fixed; }
       #pictures a .container .overlay {
-        border: 2px solid #fff;
+        background-color: #fcfcfc;
+        background-position: center;
+        opacity: 0.8;
+        padding-top: 0.4em;
         text-align: center;
-        line-height: 1.7em;
         font-size: 20px;
-        margin-top: 6em;
-        margin-left: 2.5em;
-        width: 6.5em;
-        height: 2em;
-        position: relative;
-        transition-property: background-color, color;
+        margin-top: -1.15em;
+        width: 3.2em;
+        height: 2.6em;
+        transition-property: width, height, padding-top;
         transition-duration: 0.3s; }
     #pictures a .container:hover .overlay {
-      background-color: #fff;
-      color: #f36; }
+      width: 12em;
+      height: 10em; }
   #pictures #my-picture {
     background-image: url("../img/profile.png");
     margin-left: 53em; }

@@ -54,7 +54,7 @@ body {
 
 	a {
 		text-decoration: none;
-		color: #fff;
+		color: #f36;
 
 		.container {
 			margin-left: 10px;
@@ -65,27 +65,29 @@ body {
 		    padding-top:23px;
 		    background-origin: border-box;
 		    background-size: 15.5em auto;
+		    background-position: fixed;
 
 		    .overlay {
-				//background-color: #fcfcfc;
-				border: 2px solid #fff;
+				background-color: #fcfcfc;
+				background-position: center;
+				opacity: 0.8;
+				padding-top: 0.4em;
 				text-align: center;
-				line-height: 1.7em;
 				font-size: 20px;
-				margin-top: 6em;
-				margin-left: 2.5em;
-				width: 6.5em;
-				height: 2em; 
-				position: relative;
-				transition-property: background-color, color;
+				margin-top: -1.15em;
+				//margin-top: 5.8em;
+				width: 3.2em;
+				height: 2.6em; 
+				transition-property: width, height, padding-top;
 				transition-duration: 0.3s;
 			}
 		}
 
 		.container:hover .overlay {
-			background-color: #fff;
-			color: #f36;
+			width: 12em;
+			height: 10em;
 		}
+
 	}
 
 	#my-picture {
