@@ -357,11 +357,8 @@ body {
   color: #222;
   font-family: Inconsolata, Sans-serif;
   background-color: #ffffff;
-  text-align: left;
+  text-align: center;
   font-size: 1em; }
-
-#main-container {
-  position: center; }
 
 #bio-summary #mail {
   text-decoration: none;
@@ -372,139 +369,84 @@ body {
   background-color: #f36;
   color: #ffffff; }
 
-/* 13-inch screen Laptops */
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+#greeting {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 17%; }
+
+#first-line {
+  height: 12.8em; }
+
+#bio-summary {
+  font-size: 20px;
+  padding: 1em;
+  line-height: 1.5em;
+  margin-bottom: 4em; }
+
+.pictures {
+  text-decoration: none;
+  color: #f36; }
+  .pictures .container {
+    width: 15em;
+    height: 12em;
+    padding-top: 23px;
+    background-size: 15.5em auto;
+    margin-bottom: 2.5em; }
+    .pictures .container .overlay {
+      background-color: #fcfcfc;
+      background-position: center;
+      opacity: 0.8;
+      padding-top: 0.4em;
+      text-align: center;
+      font-size: 20px;
+      margin-top: -1.15em;
+      width: 3.2em;
+      height: 2.6em;
+      transition-property: width, height, padding-top;
+      transition-duration: 0.3s; }
+  .pictures .container:hover .overlay {
+    width: 12em;
+    height: 10em; }
+
+#my-picture {
+  background-image: url("../img/profile.png"); }
+
+#writing {
+  background-image: url("../img/writing.png");
+  position: relative; }
+
+#flower {
+  background-image: url("../img/flower.png");
+  position: relative; }
+
+#yoga {
+  background-image: url("../img/yoga.png");
+  position: relative; }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #my-picture {
+    background-image: url("../img/profile.png");
+    position: right; }
+
+  #writing {
+    background-image: url("../img/writing.png");
+    position: relative; }
+
+  #flower {
+    background-image: url("../img/flower.png");
+    position: relative; }
+
+  #yoga {
+    background-image: url("../img/yoga.png");
+    position: relative; } }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .column.small-centered {
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important; }
+
   #greeting {
-    font-size: 2.5em;
-    text-align: center;
-    margin-top: 2em; }
-
-  #bio-summary {
-    font-size: 20px;
-    margin-left: 22.5%;
-    margin-top: 1.6em;
-    width: 22.8em;
-    height: 7.8em;
-    float: left;
-    padding: 1em;
-    border: 1px solid #222;
-    line-height: 1.5em; }
-
-  #pictures {
-    padding-top: 2em;
-    margin-top: 7em;
-    height: 40em; }
-    #pictures a {
-      text-decoration: none;
-      color: #f36; }
-      #pictures a .container {
-        margin-left: 10px;
-        width: 15em;
-        height: 12em;
-        background-repeat: no-repeat;
-        background-attachment: local;
-        padding-top: 23px;
-        background-origin: border-box;
-        background-size: 15.5em auto;
-        background-position: fixed; }
-        #pictures a .container .overlay {
-          background-color: #fcfcfc;
-          background-position: center;
-          opacity: 0.8;
-          padding-top: 0.4em;
-          text-align: center;
-          font-size: 20px;
-          margin-top: -1.15em;
-          width: 3.2em;
-          height: 2.6em;
-          transition-property: width, height, padding-top;
-          transition-duration: 0.3s; }
-      #pictures a .container:hover .overlay {
-        width: 12em;
-        height: 10em; }
-    #pictures #my-picture {
-      background-image: url("../img/profile.png");
-      margin-left: 59.3%; }
-    #pictures #writing {
-      background-image: url("../img/writing.png");
-      position: relative;
-      display: inline-block; }
-    #pictures #flower {
-      background-image: url("../img/flower.png");
-      position: relative;
-      display: inline-block; }
-    #pictures #yoga {
-      background-image: url("../img/yoga.png");
-      position: relative;
-      display: inline-block; }
-    #pictures #bottom-line {
-      margin-left: 21.8%; } }
-/* Tablet Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  #main-container {
-    margin-left: 15%;
-    margin-top: 8em; }
-
-  #greeting {
-    font-size: 2.5em;
-    text-align: center;
-    margin-top: 2em; }
-
-  #bio-summary {
-    font-size: 20px;
-    margin-left: 18px;
-    margin-bottom: 18px;
-    width: 22.8em;
-    height: 7.8em;
-    float: left;
-    padding: 1em;
-    border: 1px solid #222;
-    line-height: 1.5em; }
-
-  #pictures {
-    padding-top: 2em;
-    height: 40em; }
-    #pictures a {
-      text-decoration: none;
-      color: #f36; }
-      #pictures a .container {
-        margin-left: 18px;
-        width: 15em;
-        height: 12em;
-        background-repeat: no-repeat;
-        background-attachment: local;
-        padding-top: 23px;
-        background-origin: border-box;
-        background-size: 15.5em auto;
-        background-position: fixed;
-        display: inline-block;
-        float: left; }
-        #pictures a .container .overlay {
-          background-color: #fcfcfc;
-          background-position: center;
-          opacity: 0.8;
-          padding-top: 0.4em;
-          text-align: center;
-          font-size: 20px;
-          margin-top: -1.15em;
-          width: 3.2em;
-          height: 2.6em;
-          transition-property: width, height, padding-top;
-          transition-duration: 0.3s; }
-      #pictures a .container:hover .overlay {
-        width: 12em;
-        height: 10em; }
-    #pictures #my-picture {
-      background-image: url("../img/profile.png");
-      position: relative; }
-    #pictures #writing {
-      background-image: url("../img/writing.png");
-      position: relative; }
-    #pictures #flower {
-      background-image: url("../img/flower.png");
-      position: relative; }
-    #pictures #yoga {
-      background-image: url("../img/yoga.png");
-      position: relative; } }
+    margin-top: 1em; } }
 
 /*# sourceMappingURL=app.css.map */
