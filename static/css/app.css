@@ -353,9 +353,33 @@ td,
 th {
   padding: 0; }
 
+#text {
+  color: #222;
+  font-family: "Inconsolata", Sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 1.3em;
+  line-height: 1.7em; }
+
+#title {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 12%; }
+
+a {
+  text-decoration: none;
+  color: #f36;
+  transition-property: background-color, color;
+  transition-duration: 0.2s; }
+
+a:hover, a:focus {
+  background-color: #f36;
+  color: #ffffff; }
+
 body {
   color: #222;
-  font-family: Inconsolata, Sans-serif;
+  font-family: "Inconsolata", Sans-serif;
   background-color: #ffffff;
   text-align: center;
   font-size: 1em; }
@@ -370,10 +394,10 @@ body {
   color: #ffffff; }
 
 #greeting {
-  font-size: 2.5em;
+  font-size: 3em;
   text-align: center;
   margin-top: 3em;
-  margin-bottom: 17%; }
+  margin-bottom: 10%; }
 
 #first-line {
   height: 12.8em; }
@@ -382,7 +406,7 @@ body {
   font-size: 20px;
   padding: 1em;
   line-height: 1.5em;
-  margin-bottom: 4em; }
+  margin-bottom: 3.5em; }
 
 .pictures {
   text-decoration: none;
@@ -424,27 +448,9 @@ body {
   background-image: url("../img/yoga.png");
   position: relative; }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  #my-picture {
-    background-image: url("../img/profile.png");
-    position: right; }
-
-  #writing {
-    background-image: url("../img/writing.png");
-    position: relative; }
-
-  #flower {
-    background-image: url("../img/flower.png");
-    position: relative; }
-
-  #yoga {
-    background-image: url("../img/yoga.png");
-    position: relative; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .column.small-centered {
-    margin-left: auto;
-    margin-right: auto;
-    float: none !important; }
+  .container {
+    text-align: center; }
 
   #greeting {
     margin-top: 1em; } }

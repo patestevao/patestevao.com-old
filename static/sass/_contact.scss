@@ -1,0 +1,32 @@
+$type: "Inconsolata", Sans-serif;
+$bg-color: #ffffff;
+$color: #222;
+
+#text {
+	color: $color;
+	font-family: $type;
+	background-color: $bg-color;
+	text-align: center;
+	font-size: 1.3em;
+	line-height: 1.7em;
+}
+
+#title {
+	font-size: 3em;
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 12%;
+}
+
+a {
+	text-decoration: none;
+	color: #f36;
+	transition-property: background-color, color;
+	transition-duration: 0.2s;
+}
+
+a:hover, a:focus {
+	background-color: #f36;
+	color: $bg-color;
+}
+
