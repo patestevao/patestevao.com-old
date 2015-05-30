@@ -359,21 +359,22 @@ th {
   background-color: #ffffff;
   text-align: center;
   font-size: 1.3em;
-  line-height: 1.7em; }
+  line-height: 1.7em;
+  margin-bottom: 10%; }
 
 #title {
   font-size: 3em;
   text-align: center;
-  margin-top: 3em;
+  margin-top: 10%;
   margin-bottom: 12%; }
 
-a {
+.link {
   text-decoration: none;
   color: #f36;
   transition-property: background-color, color;
   transition-duration: 0.2s; }
 
-a:hover, a:focus {
+.link:hover, .link:focus {
   background-color: #f36;
   color: #ffffff; }
 
@@ -412,26 +413,33 @@ body {
   text-decoration: none;
   color: #f36; }
   .pictures .container {
-    width: 15em;
+    width: 16em;
     height: 12em;
+    margin-right: auto;
+    margin-left: auto;
+    background: no-repeat center;
     padding-top: 23px;
     background-size: 15.5em auto;
     margin-bottom: 2.5em; }
     .pictures .container .overlay {
-      background-color: #fcfcfc;
-      background-position: center;
-      opacity: 0.8;
+      background: #fff no-repeat scroll center center;
+      opacity: 0.7;
       padding-top: 0.4em;
       text-align: center;
       font-size: 20px;
       margin-top: -1.15em;
-      width: 3.2em;
       height: 2.6em;
-      transition-property: width, height, padding-top;
+      margin-right: auto;
+      margin-left: auto;
+      transition-property: height, color;
       transition-duration: 0.3s; }
+      .pictures .container .overlay .social-media {
+        transition-property: margin-top;
+        transition-duration: 0.3s; }
   .pictures .container:hover .overlay {
-    width: 12em;
     height: 10em; }
+    .pictures .container:hover .overlay .social-media {
+      margin-top: 1.7em; }
 
 #my-picture {
   background-image: url("../img/profile.png"); }
