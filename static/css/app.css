@@ -355,18 +355,19 @@ th {
 
 #text {
   color: #222;
-  font-family: "Inconsolata", Sans-serif;
+  font-family: "Lato", Sans-serif;
   background-color: #ffffff;
   text-align: center;
   font-size: 1.3em;
-  line-height: 1.7em;
+  line-height: 2em;
   margin-bottom: 10%; }
 
 #title {
   font-size: 3em;
+  font-family: "Inconsolata", Sans-serif;
   text-align: center;
-  margin-top: 10%;
-  margin-bottom: 12%; }
+  margin-top: 12%;
+  margin-bottom: 10%; }
 
 .link {
   text-decoration: none;
@@ -380,87 +381,52 @@ th {
 
 body {
   color: #222;
-  font-family: "Inconsolata", Sans-serif;
+  font-family: "Lato", Sans-serif;
+  font-weight: 300;
   background-color: #ffffff;
   text-align: center;
   font-size: 1em; }
 
-#bio-summary #mail {
-  text-decoration: none;
-  color: #f36;
-  transition-property: background-color, color;
-  transition-duration: 0.2s; }
-#bio-summary #mail:hover, #bio-summary #mail:focus {
-  background-color: #f36;
-  color: #ffffff; }
+#content {
+  margin-top: 8em; }
+  #content #gato {
+    margin-top: 1em; }
+  #content #bio-summary {
+    font-size: 20px;
+    line-height: 2em; }
+    #content #bio-summary a {
+      text-decoration: none;
+      color: #f36;
+      transition-property: background-color, color;
+      transition-duration: 0.2s; }
+    #content #bio-summary a:hover, #content #bio-summary a:focus {
+      background-color: #f36;
+      color: #ffffff; }
+    #content #bio-summary ul {
+      margin-top: 1em;
+      list-style: none;
+      padding-left: 0; }
+  #content #greeting {
+    font-family: "Inconsolata", Sans-serif;
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 5%; }
 
-#greeting {
-  font-size: 3em;
-  text-align: center;
-  margin-top: 3em;
-  margin-bottom: 10%; }
-
-#first-line {
-  height: 12.8em; }
-
-#bio-summary {
-  font-size: 20px;
-  padding: 1em;
-  line-height: 1.5em;
-  margin-bottom: 3.5em; }
-
-.pictures {
-  text-decoration: none;
-  color: #f36; }
-  .pictures .container {
-    width: 16em;
-    height: 12em;
-    margin-right: auto;
-    margin-left: auto;
-    background: no-repeat center;
-    padding-top: 23px;
-    background-size: 15.5em auto;
-    margin-bottom: 2.5em; }
-    .pictures .container .overlay {
-      background: #fff no-repeat scroll center center;
-      opacity: 0.7;
-      padding-top: 0.4em;
-      text-align: center;
-      font-size: 20px;
-      margin-top: -1.15em;
-      height: 2.6em;
-      margin-right: auto;
-      margin-left: auto;
-      transition-property: height, color;
-      transition-duration: 0.3s; }
-      .pictures .container .overlay .social-media {
-        transition-property: margin-top;
-        transition-duration: 0.3s; }
-  .pictures .container:hover .overlay {
-    height: 10em; }
-    .pictures .container:hover .overlay .social-media {
-      margin-top: 1.7em; }
-
-#my-picture {
-  background-image: url("../img/profile.png"); }
-
-#writing {
-  background-image: url("../img/writing.png");
-  position: relative; }
-
-#flower {
-  background-image: url("../img/flower.png");
-  position: relative; }
-
-#yoga {
-  background-image: url("../img/yoga.png");
-  position: relative; }
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .container {
-    text-align: center; }
-
-  #greeting {
-    margin-top: 1em; } }
+@media only screen and (min-device-width: 641px) and (max-device-width: 1000px) {
+  #content {
+    margin-top: 4em; }
+    #content #greeting {
+      font-size: 2.5em;
+      margin-top: 1em; }
+    #content li {
+      display: inline-block; } }
+@media only screen and (max-device-width: 640px) {
+  #content {
+    margin-top: 2em; }
+    #content #greeting {
+      font-size: 2.5em; }
+    #content #gato {
+      height: 8em; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,4 +1,4 @@
-$type: "Inconsolata", Sans-serif;
+$type: "Lato", Sans-serif;
 $bg-color: #ffffff;
 $color: #222;
 
@@ -8,15 +8,16 @@ $color: #222;
 	background-color: $bg-color;
 	text-align: center;
 	font-size: 1.3em;
-	line-height: 1.7em;
+	line-height: 2em;
 	margin-bottom: 10%;
 }
 
 #title {
 	font-size: 3em;
+	font-family: "Inconsolata", Sans-serif;
 	text-align: center;
-	margin-top: 10%;
-	margin-bottom: 12%;
+	margin-top: 12%;
+	margin-bottom: 10%;
 }
 
 .link {

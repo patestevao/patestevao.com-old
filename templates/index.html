@@ -1,57 +1,24 @@
 {% extends 'base.html' %}
 {% block content %}
-	<div class="row">
-		<div class="small-12 small-centered columns" id="banner"><h1 id="greeting">Hi, I'm Patrícia Estevão</h1></div>
-	</div>
-	<div id="separator1"></div>
-	<div id="separator2"></div>
-	<div class="row">
-		<div class="large-12 large-centered columns">		
+	<div class="row" id="content">
+		<div class="large-3 medium-3 columns">
+			<img src="../static/img/gato.png" id="gato">
+		</div>
+		<div class="large-9 medium-9 columns">
+			<div class="row">
+				<div class="small-12 columns" id="banner"><h1 id="greeting">Hi, I'm Patrícia Estevão</h1></div>
+			</div>
 			<div id="bio-summary">
-				I'm a web designer, writer and Environmental Engineer.
+				I'm a Web designer and Infographic creator.
 				<br>
-				Personal status: tech-lover, yoga apprentice and world explorer.
-				<br>
-				Folow my work, my adventures or <a id="mail" href="contact.html">contact me</a>.
+				<a id="mail" href="contact.html">Contact me</a> or check out more about what I do.
+				<ul> 
+					<li><a href="https://twitter.com/@patestevao">  >> Twitter <<  </a></li>
+					<li><a href="https://medium.com/@patestevao">  >> Writing <<  </a></li>
+					<li><a href="https://www.behance.net/patestevao">  >> Portfolio <<  </a></li>
+				</ul>	
 			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="small-12 medium-6 large-3 columns">
-			<a class="pictures" href="https://twitter.com/patestevao">
-				<div class="container" id="my-picture">
-					<div class="overlay">
-						<i class="fa fa-twitter fa-2x social-media"></i>
-					</div>
-				</div>
-			</a>
-		</div>	
-		<div class="small-12 medium-6 large-3 columns">
-			<a class="pictures" href="https://medium.com/@patestevao">
-				<div class="container" id="writing">
-					<div class="overlay">
-						<i class="fa fa-medium fa-2x social-media"></i>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="small-12 medium-6 large-3 columns">
-			<a class="pictures" href="https://www.behance.net/patestevao">
-				<div class="container" id="flower">
-					<div class="overlay">
-						<i class="fa fa-behance fa-2x social-media"></i>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="small-12 medium-6 large-3 columns">
-			<a class="pictures" href="https://instagram.com/patestevao">
-				<div class="container" id="yoga">
-					<div class="overlay">
-						<i class="fa fa-instagram fa-2x social-media"></i>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>	
+	
 {% endblock content %}
