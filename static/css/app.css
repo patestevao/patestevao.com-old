@@ -383,7 +383,7 @@ body {
   color: #222;
   font-family: "Lato", Sans-serif;
   font-weight: 300;
-  background-color: #ffffff;
+  background-color: #fcfcfc;
   text-align: center;
   font-size: 1em; }
 
@@ -401,7 +401,7 @@ body {
       transition-duration: 0.2s; }
     #content #bio-summary a:hover, #content #bio-summary a:focus {
       background-color: #f36;
-      color: #ffffff; }
+      color: #fcfcfc; }
     #content #bio-summary ul {
       margin-top: 1em;
       list-style: none;
