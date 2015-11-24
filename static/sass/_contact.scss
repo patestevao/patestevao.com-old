@@ -1,11 +1,10 @@
 $type: "Lato", Sans-serif;
-$bg-color: #ffffff;
+$bg-color: #fcfcfc;
 $color: #222;
 
 #text {
 	color: $color;
 	font-family: $type;
-	background-color: $bg-color;
 	text-align: center;
 	font-size: 1.3em;
 	line-height: 2em;
@@ -27,7 +26,7 @@ $color: #222;
 	transition-duration: 0.2s;
 }
 
-.link:hover, .link:focus {
+.link:hover {
 	background-color: #f36;
 	color: $bg-color;
 }

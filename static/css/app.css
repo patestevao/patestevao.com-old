@@ -356,7 +356,6 @@ th {
 #text {
   color: #222;
   font-family: "Lato", Sans-serif;
-  background-color: #ffffff;
   text-align: center;
   font-size: 1.3em;
   line-height: 2em;
@@ -375,9 +374,9 @@ th {
   transition-property: background-color, color;
   transition-duration: 0.2s; }
 
-.link:hover, .link:focus {
+.link:hover {
   background-color: #f36;
-  color: #ffffff; }
+  color: #fcfcfc; }
 
 body {
   color: #222;
