@@ -1,0 +1,87 @@
+@import 'normalize';
+@import 'contact';
+
+$type: "Lato", Sans-serif;
+$bg-color: #fcfcfc;
+$color: #222;
+
+body {
+	color: $color;
+	font-family: $type;
+	font-weight: 300;
+	background-color: $bg-color;
+	text-align: center;
+	font-size: 1em;
+}
+
+#content {
+	margin-top: 8em;
+
+	#gato {
+		margin-top: 1em;
+	}
+
+	#bio-summary {
+		font-size: 20px;
+		line-height: 2em;
+
+		a {
+			text-decoration: none;
+			color: #f36;
+			transition-property: background-color, color;
+			transition-duration: 0.2s;
+		}
+
+		a:hover, a:focus {
+			background-color: #f36;
+			color: $bg-color;
+		}
+
+		ul {
+			margin-top: 1em;
+			list-style: none;
+			padding-left: 0;
+		}
+	}
+	 
+		#greeting {
+		font-family: "Inconsolata", Sans-serif;
+		font-size: 3em;
+		font-weight: 300;
+		text-align: center;
+		margin-bottom: 5%;
+	}
+}
+
+@media only screen 
+  and (min-device-width: 641px) 
+  and (max-device-width: 1000px) {
+
+	#content {
+		margin-top: 4em;
+
+		#greeting {
+			font-size: 2.5em;
+			margin-top: 1em;
+		}
+
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+@media only screen
+	and (max-device-width: 640px) {
+		#content {
+			margin-top: 2em;
+
+			#greeting {
+				font-size: 2.5em;
+			}
+
+			#gato {
+				height: 8em;
+			}
+		}		
+	}
