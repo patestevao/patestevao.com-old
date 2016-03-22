@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale-1.0">
 	<title>Patrícia Estevão</title>
-	<link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/foundation.css') }}">
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+	<link rel="icon" type="image/ico" href="/static/favicon.ico">
+	<link rel="stylesheet" href="/static/css/foundation.css">
+	<link rel="stylesheet" href="/static/css/app.css">
 	<link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
@@ -22,7 +22,23 @@
 	</script>
 </head>
 <body>
-{% block content %}
-{% endblock content %}
+
+<div class="row">
+	<div class="small-12 small-centered columns">
+		<h1 id="title">Contact <a class="link" href="index.html">@patestevao</a></h1>
+	</div>
+</div>
+<div class="row">
+	<div class="small-12 small-centered columns" id="text">
+		The best way to contact me is through my e-mail <a class="link" href="mailto:contact@patestevao.com">contact@patestevao.com</a>.
+		<br>
+		To make it more private, you can send me a PGP encrypted message
+		<br>
+		using my PGP key, which is F194 482B.
+		<br>
+		If this is not what you are looking for, go back to <a class="link" href="index.html">Home</a>.
+	</div>
+</div>	
+
 </body>
 </html>
