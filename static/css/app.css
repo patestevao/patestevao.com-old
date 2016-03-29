@@ -384,10 +384,20 @@ body {
   font-weight: 300;
   background-color: #fcfcfc;
   text-align: center;
-  font-size: 1em; }
+  font-size: 1em;
+  height: 100%; }
+
+#page-wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -2em; }
+  #page-wrapper #push {
+    height: 2em; }
 
 #content {
-  margin-top: 8em; }
+  margin-top: 8em;
+  padding-right: 1em; }
   #content #gato {
     margin-top: 1em; }
   #content #bio-summary {
@@ -412,6 +422,18 @@ body {
     text-align: center;
     margin-bottom: 5%; }
 
+#footer {
+  height: 2em;
+  background-color: #ff3366;
+  margin-top: 2em; }
+
+@media only screen and (max-device-width: 1024px) {
+  #content {
+    margin-top: 4em;
+    padding-right: 0; }
+
+  #gato {
+    height: 12em; } }
 @media only screen and (min-device-width: 641px) and (max-device-width: 1000px) {
   #content {
     margin-top: 4em; }
@@ -427,5 +449,25 @@ body {
       font-size: 2.5em; }
     #content #gato {
       height: 8em; } }
+@media only screen and (max-device-width: 366px) {
+  #content {
+    margin-left: 0;
+    padding-right: 0; }
+    #content #greeting {
+      font-size: 2em; } }
+#error-404-content {
+  margin-top: 5em; }
+  #error-404-content h2 {
+    font-size: 2em; }
+  #error-404-content p {
+    font-size: 1.4em; }
+  #error-404-content a {
+    text-decoration: none;
+    color: #f36;
+    transition-property: background-color, color;
+    transition-duration: 0.2s; }
+  #error-404-content a:hover, #error-404-content a:focus {
+    background-color: #f36;
+    color: #fcfcfc; }
 
 /*# sourceMappingURL=app.css.map */

@@ -12,10 +12,23 @@ body {
 	background-color: $bg-color;
 	text-align: center;
 	font-size: 1em;
+	height: 100%;
+}
+
+#page-wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -2em;
+
+	#push {
+		height: 2em;
+	}
 }
 
 #content {
 	margin-top: 8em;
+	padding-right: 1em;
 
 	#gato {
 		margin-top: 1em;
@@ -53,6 +66,24 @@ body {
 	}
 }
 
+#footer {
+	height: 2em;
+	background-color: #ff3366;
+	margin-top: 2em;
+}
+
+@media only screen
+	and (max-device-width: 1024px) {
+		#content {
+			margin-top: 4em;
+			padding-right: 0;
+		}
+
+		#gato {
+			height: 12em;
+		}
+	}
+
 @media only screen 
   and (min-device-width: 641px) 
   and (max-device-width: 1000px) {
@@ -85,3 +116,38 @@ body {
 			}
 		}		
 	}
+
+@media only screen
+	and (max-device-width: 366px) {
+		#content {
+			margin-left: 0;
+			padding-right: 0;
+			#greeting {
+				font-size: 2em;
+			}
+		}
+	}
+
+#error-404-content {
+	margin-top: 5em;
+
+	h2 {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 1.4em;
+	}
+
+	a {
+		text-decoration: none;
+		color: #f36;
+		transition-property: background-color, color;
+		transition-duration: 0.2s;
+	}
+
+	a:hover, a:focus {
+		background-color: #f36;
+		color: $bg-color;
+	}
+}	
