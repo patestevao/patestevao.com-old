@@ -12,18 +12,44 @@ body {
 	background-color: $bg-color;
 	text-align: center;
 	font-size: 1em;
+	height: 100%;
+}
+
+#page-wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -2em;
+
+	#push {
+		height: 2em;
+	}
 }
 
 #content {
 	margin-top: 8em;
+	padding-right: 1em;
+
+	#my-name {
+		display: inline-block;
+	}
 
 	#gato {
-		margin-top: 1em;
+		margin-top: 3em;
 	}
 
 	#bio-summary {
 		font-size: 20px;
 		line-height: 2em;
+
+		p {
+			margin-bottom: 1em;
+			line-height: 1.8em;
+		}
+
+		.inseparable {
+			display: inline-block;
+		}
 
 		a {
 			text-decoration: none;
@@ -53,9 +79,32 @@ body {
 	}
 }
 
+#footer {
+	height: 2em;
+	background-color: #ff3366;
+	margin-top: 2em;
+}
+
+@media only screen
+	and (max-width: 1024px) {
+		#content {
+			margin-top: 4em;
+			padding-right: 0;
+
+			p {
+				margin-right: 1em;
+				margin-left: 1em;
+			}
+
+			#gato {
+				height: 12em;
+			}
+		}
+	}
+
 @media only screen 
-  and (min-device-width: 641px) 
-  and (max-device-width: 1000px) {
+  and (min-width: 641px) 
+  and (max-width: 1000px) {
 
 	#content {
 		margin-top: 4em;
@@ -72,7 +121,7 @@ body {
 }
 
 @media only screen
-	and (max-device-width: 640px) {
+	and (max-width: 640px) {
 		#content {
 			margin-top: 2em;
 
@@ -85,3 +134,56 @@ body {
 			}
 		}		
 	}
+
+@media only screen
+	and (max-width: 366px) {
+		#content {
+			margin-left: 0;
+			padding-right: 0;
+			#greeting {
+				font-size: 2em;
+			}
+		}
+	}
+
+#error-404-content {
+	margin-top: 5em;
+
+	h2 {
+		font-size: 2em;
+		margin-bottom: 2em;
+	}
+
+	p {
+		font-size: 1.4em;
+	}
+
+	a {
+		text-decoration: none;
+		color: #f36;
+		transition-property: background-color, color;
+		transition-duration: 0.2s;
+	}
+
+	a:hover, a:focus {
+		background-color: #f36;
+		color: $bg-color;
+	}
+
+	#quote-container {
+		margin-top: 5em;
+	
+		p {
+			font-size: 1.2em;
+			text-align: left;
+		}
+
+		.quote {
+			margin: 0;
+		}
+
+		#author {
+			color: #888;
+		}
+	}
+}	

@@ -14,5 +14,9 @@ def index2():
 def contact():
 	return render_template('contact.html')
 
+@app.route('/404.html')
+def error_404():
+	return render_template('404.html')	
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
