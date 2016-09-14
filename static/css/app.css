@@ -385,18 +385,17 @@ body {
   background-color: #fcfcfc;
   text-align: center;
   font-size: 1em;
-  height: 100%; }
+  height: auto; }
 
-#page-wrapper {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  margin: 0 auto -2em; }
-  #page-wrapper #push {
-    height: 2em; }
+.pink-bar {
+  position: fixed;
+  top: 0;
+  background-color: #D45C9E;
+  height: 8px;
+  width: 100%; }
 
 #content {
-  margin-top: 8em;
+  margin-top: 7em;
   padding-right: 1em; }
   #content #my-name {
     display: inline-block; }
@@ -412,11 +411,11 @@ body {
       display: inline-block; }
     #content #bio-summary a {
       text-decoration: none;
-      color: #f36;
+      color: #D45C9E;
       transition-property: background-color, color;
       transition-duration: 0.2s; }
     #content #bio-summary a:hover, #content #bio-summary a:focus {
-      background-color: #f36;
+      background-color: #D45C9E;
       color: #fcfcfc; }
     #content #bio-summary ul {
       margin-top: 1em;
@@ -426,13 +425,7 @@ body {
     font-family: "Inconsolata", Sans-serif;
     font-size: 3em;
     font-weight: 300;
-    text-align: center;
-    margin-bottom: 5%; }
-
-#footer {
-  height: 2em;
-  background-color: #ff3366;
-  margin-top: 2em; }
+    text-align: center; }
 
 @media only screen and (max-width: 1024px) {
   #content {
@@ -473,11 +466,11 @@ body {
     font-size: 1.4em; }
   #error-404-content a {
     text-decoration: none;
-    color: #f36;
+    color: #D45C9E;
     transition-property: background-color, color;
     transition-duration: 0.2s; }
   #error-404-content a:hover, #error-404-content a:focus {
-    background-color: #f36;
+    background-color: #D45C9E;
     color: #fcfcfc; }
   #error-404-content #quote-container {
     margin-top: 5em; }
