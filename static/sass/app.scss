@@ -4,6 +4,7 @@
 $type: "Lato", Sans-serif;
 $bg-color: #fcfcfc;
 $color: #222;
+$pink: #D45C9E;
 
 body {
 	color: $color;
@@ -12,22 +13,19 @@ body {
 	background-color: $bg-color;
 	text-align: center;
 	font-size: 1em;
-	height: 100%;
+	height: auto;
 }
 
-#page-wrapper {
-	min-height: 100%;
-	height: auto !important;
-	height: 100%;
-	margin: 0 auto -2em;
-
-	#push {
-		height: 2em;
-	}
+.pink-bar {
+	position: fixed;
+	top: 0;
+	background-color: $pink;
+	height: 8px;
+	width: 100%;
 }
 
 #content {
-	margin-top: 8em;
+	margin-top: 7em;
 	padding-right: 1em;
 
 	#my-name {
@@ -53,13 +51,13 @@ body {
 
 		a {
 			text-decoration: none;
-			color: #f36;
+			color: $pink;
 			transition-property: background-color, color;
 			transition-duration: 0.2s;
 		}
 
 		a:hover, a:focus {
-			background-color: #f36;
+			background-color: $pink;
 			color: $bg-color;
 		}
 
@@ -75,14 +73,7 @@ body {
 		font-size: 3em;
 		font-weight: 300;
 		text-align: center;
-		margin-bottom: 5%;
 	}
-}
-
-#footer {
-	height: 2em;
-	background-color: #ff3366;
-	margin-top: 2em;
 }
 
 @media only screen
@@ -160,13 +151,13 @@ body {
 
 	a {
 		text-decoration: none;
-		color: #f36;
+		color: $pink;
 		transition-property: background-color, color;
 		transition-duration: 0.2s;
 	}
 
 	a:hover, a:focus {
-		background-color: #f36;
+		background-color: $pink;
 		color: $bg-color;
 	}
 
