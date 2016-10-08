@@ -1,25 +1,23 @@
 {% extends 'base.html' %}
 {% block content %}
-	<div class="row" id="content">
-		<div class="large-3 medium-12 columns">
-			<img src="../static/img/gato.svg" id="gato">
-		</div>
-		<div class="large-9 medium-12 columns">
-			<div class="row">
-				<div class="small-12 columns" id="banner"><h1 id="greeting">Hi, I'm <span id="my-name">Patrícia Estevão</span></h1></div>
-			</div>
-			<div id="bio-summary">
-				<p>I'm a UX/UI Designer and <span class="inseparable">Infographic Creator.</span></p>
-				<p><a id="mail" href="contact.html">Contact me</a> or check out more <span class="inseparable">about what I do.</span></p>
-				<ul> 
-					<li><a href="https://www.behance.net/patestevao">  >> Portfolio <<  </a></li>
-					<li><a href="https://medium.com/@patestevao">  >> Writing <<  </a></li>
-					<li><a href="https://twitter.com/@patestevao">  >> Twitter <<  </a></li>
-				</ul>
-				<p>Oh yes, before I forget...</p> 
-				<p>I'm now working with some new and awesome technologies at <a href="https://txplab.com">TXPlab</a>.</p>
+	<div id="top-section">
+		<div id="bg-frame"></div>
+		<div class="row">
+			<div class="small-12 columns">
+				<nav id="navigation">
+					<ul id="nav-list">
+						<li class="nav-items"><a class="nav-links" href="/">Home</a></li>
+						<li class="nav-items"><a class="nav-links" href="#">Infográficos</a></li>
+						<li class="nav-items"><a class="nav-links" href="#">Contato</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
+		<div class="row">
+			<div class="small-12 columns">
+				<h1>Olá, eu sou <span class="same-line">Patrícia Estevão.</span></h1>
+			</div>
+		</div>	
 	</div>
 	
 {% endblock content %}
