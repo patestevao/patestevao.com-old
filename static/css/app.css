@@ -23,7 +23,7 @@ body {
   height: 80vh;
   width: 100%;
   animation-name: fade-bg;
-  animation-duration: 5s;
+  animation-duration: 6s;
   animation-fill-mode: forwards;
 }
 
@@ -100,5 +100,183 @@ h1 {
   .nav-items {
     padding-left: 8px;
     padding-right: 8px;
+  }
+}
+
+/*end top-section media queries*/
+
+
+/*main-content stylying*/
+
+#main-content {
+  width: 100%;
+}
+
+#main-content::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  border-left:4px dotted #d24d57;
+  margin-left: -2px;
+  margin-top: 85px;
+}
+
+#line-1 {
+  margin-top: 150px;
+}
+
+#profile-pic-container {
+  text-align: right;
+}
+
+#profile-pic {
+  border-radius: 100%;
+  width: 180px;
+  height: 180px;
+  margin-right: 1.2em;
+}
+
+.circle {
+  background: #F14D56;
+  border-radius: 100%;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  margin-top:85px;
+  display: block;
+}
+
+h2 {
+  font-weight: 300;
+  color: #d24d57;
+  font-size: 1.5em;
+  text-align: left;
+  margin-top: -60px;
+  margin-left: 1em;
+}
+
+.main-section-links {
+  color: #d24d57;
+  transition: color 0.2s ease-in;
+}
+
+.main-section-links:hover {
+  color: #0074B5;
+}
+
+#line-2 {
+  margin-top: 150px;
+}
+
+.paragraph {
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 15px;
+  color: #777;
+  text-align: left;
+  line-height: 1.7em;
+  /*margin-right: 1em;*/
+}
+
+#paragraph-line-2 {
+  margin-right: 1.2em;
+}
+
+#engineer-container {
+  text-align: left;
+  margin-top: -80px;
+}
+
+#engineer-img {
+  height: 150px;
+  width: auto;
+  margin-left: 1.5em;
+}
+
+#line-3 {
+  margin-top: 150px;
+}
+
+#robot-container {
+  text-align: right;
+  z-index: 99;
+}
+
+#robot-img {
+  height: 150px;
+  width: auto;
+  z-index: 999;
+}
+
+#paragraph-line-3 {
+  margin-top: -100px;
+  margin-left: 1.2em;
+  z-index: 0;
+}
+
+#line-4 {
+  margin-top: 100px;
+}
+
+#h2-style {
+  font-weight: 300;
+  color: #d24d57;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 1.1em;
+  margin-bottom: 5em;
+}
+
+@media (max-width: 640px) {
+  #line-1 {
+    margin-top: 100px;
+  }
+
+  .circle {
+    display: none;
+  }
+
+  #profile-pic-container {
+    text-align: center;
+  }
+
+  #profile-pic {
+    margin: 0;
+  }
+
+  h2 {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: -15px;
+    font-size: 1.3em;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+
+  #engineer-container {
+    text-align: center;
+    margin:-30px;
+  }
+
+  #engineer-img {
+    margin:0;
+  }
+
+  #robot-container {
+    text-align: center;
+  }
+
+  #paragraph-line-3 {
+    text-align: center;
+    margin: -10px;
+  }
+
+  #h2-style {
+    font-size: 1.3em;
   }
 }
