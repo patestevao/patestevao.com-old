@@ -2,6 +2,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   height: 100%;
+  min-height: 100%;
 }
 
 #top-section {
@@ -110,9 +111,13 @@ h1 {
 
 #main-content {
   width: 100%;
+  height: 100%;
+  position: relative;
+  /*min-height: 100%;*/
+  /*box-sizing: border-box;*/
 }
 
-#main-content::before {
+/*#dotted-line {
   content: '';
   position: absolute;
   height: 100%;
@@ -120,6 +125,55 @@ h1 {
   border-left:4px dotted #d24d57;
   margin-left: -2px;
   margin-top: 85px;
+}*/
+
+#main-content:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1050px;
+  /*min-height: 100%;*/
+  left: 50%;
+  border-left:4px dotted #d24d57;
+  margin-left: -2px;
+  margin-top: 85px;
+  z-index: -1;
+}
+
+@media (max-width: 810px) {
+  #main-content:before {
+    height: 1150px;
+  }
+}
+
+@media (max-width: 735px) {
+  #main-content:before {
+    height: 1240px;
+  }
+}
+
+@media (max-width: 640px) {
+  #main-content:before {
+    height: 1080px;
+  }
+}
+
+/*@media (max-width: 476px) {
+  #main-content:before {
+    height: 1300px;
+  }
+}*/
+
+@media (max-width: 420px) {
+  #main-content:before {
+    height: 1190px;
+  }
+}
+
+@media (max-width: 370px) {
+  #main-content:before {
+    height: 1275px;
+  }
 }
 
 #line-1 {
@@ -154,6 +208,7 @@ h2 {
   text-align: left;
   margin-top: -60px;
   margin-left: 1em;
+  margin-bottom: 0;
 }
 
 .main-section-links {
@@ -224,8 +279,11 @@ h2 {
   color: #d24d57;
   font-size: 1.5em;
   text-align: center;
-  line-height: 1.1em;
+  line-height: 1.5em;
   margin-bottom: 5em;
+  background: #f0f0f0;
+  border-radius: 10px;
+  padding: 25px;
 }
 
 @media (max-width: 640px) {
@@ -251,11 +309,20 @@ h2 {
     border-radius: 10px;
     text-align: center;
     margin-top: -15px;
+    margin-left: 2em;
+    margin-right: 2em;
     font-size: 1.3em;
   }
 
   .paragraph {
-    text-align: center;
+    text-align: center; 
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+
+  #paragraph-line-2 {
+    margin-right: 2em;
+    /*margin-top: 100px;*/
   }
 
   #engineer-container {
@@ -264,19 +331,35 @@ h2 {
   }
 
   #engineer-img {
-    margin:0;
+    /*margin:0;*/
+    display: none;
   }
 
   #robot-container {
     text-align: center;
   }
 
+  #robot-img {
+    display: none;
+  }
+
   #paragraph-line-3 {
     text-align: center;
-    margin: -10px;
+    margin-top: 0px;
+    margin-left: 2em;
   }
 
   #h2-style {
     font-size: 1.3em;
+    padding: 10px;
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 485px) {
+  h2, .paragraph, #h2-style, #paragraph-line-2, #paragraph-line-3 {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
