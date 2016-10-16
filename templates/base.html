@@ -22,6 +22,26 @@
 	</script>
 </head>
 <body>
+	{% block header%}
+		<div class="header-container">
+			<div class="row">
+				<div class="small-12 columns">
+					<nav class="general-header-nav navigation">
+						<ul class="nav-list">
+							<li class="nav-items"><a class="nav-links" href="/">Home</a></li>
+							<li class="nav-items"><a class="nav-links" href="/infograficos.html">Infográficos</a></li>
+							<li class="nav-items"><a class="nav-links" href="/contact.html">Contato</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="small-12 columns">
+					<h1 class="subpage-title">{% block header_title %} {% endblock header_title %}</h1>
+				</div>
+			</div>
+		</div>
+	{% endblock header%}
 	{% block content %}
 	{% endblock content %}
 </body>

@@ -10,6 +10,10 @@ def index():
 def index2():
 	return render_template('index.html')
 
+@app.route('/infograficos.html')
+def infograficos():
+	return render_template('infograficos.html')	
+
 @app.route('/contact.html')
 def contact():
 	return render_template('contact.html')

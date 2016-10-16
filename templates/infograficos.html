@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block header_title %}Infográficos Selecionados{% endblock header_title %}
+
+{% block content %}
+<div class="subpage-container">
+	<div class="row">
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<a href="#"><img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-1.png') }}" alt=""></a>
+			<div class="mask"></div>
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-2.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-3.png') }}" alt="">
+		</div>	
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-4.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-5.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-6.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-7.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-8.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-9.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-10.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-11.png') }}" alt="">
+		</div>
+		<div class="infographic-container large-4 medium-4 small-6 columns">
+			<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-12.png') }}" alt="">
+		</div>
+	</div>	
+</div>
+{% endblock content %}
