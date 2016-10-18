@@ -10,8 +10,8 @@
 				<nav class="navigation">
 					<ul class="nav-list">
 						<li class="nav-items"><a class="nav-links" href="/">Home</a></li>
-						<li class="nav-items"><a class="nav-links" href="/infograficos.html">Infográficos</a></li>
-						<li class="nav-items"><a class="nav-links" href="/contact.html">Contato</a></li>
+						<li class="nav-items"><a class="nav-links" href="{{ url_for('infograficos') }}">Infográficos</a></li>
+						<li class="nav-items"><a class="nav-links" href="{{ url_for('contact') }}">Contato</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -31,7 +31,7 @@
 			</div>
 			<div class="circle"></div>
 			<div class="large-6 medium-6 small-12 columns">	
-				<h2>Eu sou designer de informação e UX e faço parte, atualmente, do <a class="main-section-links" href="https://txplab.com">TXPlab</a>.</h2>
+				<h2>Eu sou designer de informação e UX e faço parte, atualmente, do <a class="main-section-links" href="//txplab.com">TXPlab</a>.</h2>
 			</div>
 		</div>
 		<div id="line-2" class="row">
@@ -62,7 +62,7 @@
 			<div class="large-8 large-centered small-12 columns">
 				<p id="h2-style">Selecionei alguns dos meus infográficos para você. 
 				<br>
-				Veja eles aqui no meu <a class="main-section-links" href="#">portfólio</a>.</p>
+				Veja eles aqui no meu <a class="main-section-links" href="{{ url_for('infograficos') }}">portfólio</a>.</p>
 			</div>
 		</div>
 	</div>

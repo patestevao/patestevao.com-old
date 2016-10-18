@@ -367,6 +367,7 @@ h2 {
 
 .subpage-container {
   margin-top: 100px;
+  margin-bottom: 150px;
 }
 
 .subpage-paragraph {
@@ -379,6 +380,7 @@ h2 {
 @media (max-width: 640px) {
   .subpage-container {
     margin-top: 40px;
+    margin-bottom: 50px;
   }
 
   .subpage-paragraph {
@@ -390,35 +392,146 @@ h2 {
 
 /*infographic page style*/
 
+h3 {
+  font-size: 1.4em;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
 .infographic-container {
   margin: auto;
   margin-top: 2em;
   text-align: center;
-  /*height: 300px;*/
-  /*width: 300px;*/
+}
+
+.container1 {
+  height: 100%;
+  width: 100%;
+  border: 7px solid #f0f0f0;
+  position: relative;
+  overflow: hidden;
+  margin:auto;
 }
 
 .infographic-sample {
+  height: 100%;
+  width: auto;
+  display: block;
+  position: relative;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  /*transform: translateX(0);*/
+} 
+
+.mask1 {
+  height: 100%;
   width: 100%;
-  height: auto;
-  margin: auto;
-  border: 2px solid #d24d57;
-}
-
-.mask {
-  /*background: url('../img/square.svg');*/
-  background: rgba(150,17,27,0);
-  /*opacity: 0.3;*/
-  height: 304px;
-  width: 304px;
   position: absolute;
-  top: 0;
-  left: 15px;
-  transition: all 0.2s ease-in;
+  top:0;
+  left:0;
+  background-color: #d24d57;
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  /*transform: translateX(-400px);*/
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
 }
 
-.infographic-sample:hover .mask{
-  background: rgba(150,17,27,0.7)
+.container1:hover .infographic-sample{
+  /*transform: translateX(400px);*/
+  transform: scale(1.1);
 }
 
+.container1:hover .mask1 {
+  /*transform: translateX(0);*/
+  opacity: 0.9;
+}
 
+.container1:hover h3 {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.small-title {
+  padding-top: 32%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.big-title {
+  padding-top: 25%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width: 965px) {
+  .mask1 h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 750px) {
+  .container1 {
+    border: 2px solid #f0f0f0;
+  }
+
+  .big-title {
+    padding-top: 20%;
+  }
+
+  .small-title {
+    padding-top: 28%;
+  }
+}
+
+@media (max-width: 640px) {
+  .mask1 h3{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.4em;
+  }
+
+  .big-title {
+    padding-top: 20%;
+  }
+
+  .small-title {
+    padding-top: 30%;
+  }
+}
+
+@media (max-width: 540px) {
+  .mask1 h3 {
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
+    font-size: 1.2em;
+    /*padding-top: 25%;*/
+  }
+}
+
+@media (max-width: 434px) {
+  .mask1 h3 {
+    font-size: 1em;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+@media (max-width: 370px) {
+  .big-title {
+    padding-top: 8%;
+  }
+
+  .small-title {
+    padding-top: 20%;
+  }
+}
+
+.mask1 h3, .mask1 p {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+/*end infographic page style*/
