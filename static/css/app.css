@@ -278,9 +278,6 @@ h2 {
   }
 
   h2 {
-   /* background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 10px;*/
     text-align: center;
     margin-top: 20px;
     margin-left: 2em;
@@ -290,13 +287,12 @@ h2 {
 
   .paragraph {
     text-align: center; 
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   #paragraph-line-2 {
-    margin-right: 2em;
-    /*margin-top: 100px;*/
+    margin-right: 0;
   }
 
   #engineer-container {
@@ -305,7 +301,6 @@ h2 {
   }
 
   #engineer-img {
-    /*margin:0;*/
     display: none;
   }
 
@@ -320,14 +315,14 @@ h2 {
   #paragraph-line-3 {
     text-align: center;
     margin-top: 0px;
-    margin-left: 2em;
+    margin-left: 0;
   }
 
   #h2-style {
     font-size: 1.3em;
     padding: 10px;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-right: 0;
+    margin-left: 0;
   }
 
   #gray-area {
@@ -343,12 +338,6 @@ h2 {
     content: '';
     border-top: 2px dotted #fff;
     display: block;
-  /*position: absolute;
-  height: 1100px;
-  left: 50%;
-  border-left:4px dotted #d24d57;
-  margin-left: -2px;
-  margin-top: 85px;*/
   }
 }
 
@@ -543,3 +532,12 @@ h3 {
 }
 
 /*end infographic page style*/
+
+
+/*error 404 page style*/
+
+#quote-container {
+  text-align: left;
+  margin-top: 80px;
+  color: #d24d57;
+}
