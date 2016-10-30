@@ -12,7 +12,7 @@ def index2():
 
 @app.route('/infograficos/')
 def infograficos():
-	return render_template('infograficos.html')	
+	return render_template('infograficos.html')
 
 @app.route('/contact/')
 def contact():
@@ -20,7 +20,7 @@ def contact():
 
 @app.route('/404.html')
 def error_404():
-	return render_template('404.html')	
+	return render_template('404.html')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
