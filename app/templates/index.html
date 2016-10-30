@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block header %}
+{% endblock header %}
+
+{% block content %}
+	<div id="top-section">
+		<div id="bg-frame"></div>
+		<div class="row">
+			<div class="small-12 columns">
+				<nav class="navigation">
+					<ul class="nav-list">
+                        <li class="nav-items"><a class="nav-links" href="{{ url_for('main.index')  }}">Home</a></li>
+						<li class="nav-items"><a class="nav-links" href="{{ url_for('main.infograficos') }}">Infográficos</a></li>
+						<li class="nav-items"><a class="nav-links" href="{{ url_for('main.contact') }}">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 columns">
+				<h1>Olá, eu sou <span class="same-line">Patrícia Estevão.</span></h1>
+			</div>
+		</div>	
+	</div>
+	<div id="main-content">
+			<div id="line-1" class="row">
+				<div class="large-6 medium-6 small-12 columns">
+					<div id="profile-pic-container">
+						<img id="profile-pic" src="{{ url_for('static', filename='img/quadrada.jpg') }}" alt="Profile picture">
+					</div>
+				</div>
+				<div class="circle"></div>
+				<div class="large-6 medium-6 small-12 columns">	
+					<h2>Eu sou designer de informação e UX e, atualmente, faço parte do <a class="main-section-links" href="//txplab.com">TXPlab</a>.</h2>
+				</div>
+			</div>
+		<div id="gray-area">
+			<div id="line-2" class="row">
+				<div class="large-6 medium-6 small-12 columns">
+					<p id="paragraph-line-2" class="paragraph">Eu entrei na faculdade de Engenharia Ambiental com um objetivo em mente: trabalhar com <strong>tecnologias que promovessem mudanças positivas no mundo</strong>.
+					<br><br>
+					Depois de formada, a profissão mudou, mas o objetivo ainda é o mesmo.</p>
+				</div>
+				<div id="circle-2" class="circle"></div>
+				<div class="large-6 medium-6 small-12 columns">
+					<div id="engineer-container">
+						<img id="engineer-img" src="{{ url_for('static', filename='img/environmental-engineering.svg') }}" alt="Environmental Engineering">
+					</div>
+				</div>
+			</div>
+			<div id="line-3" class="row">
+				<div class="large-6 medium-6 small-12 columns">
+					<div id="robot-container">
+						<img id="robot-img" src="{{ url_for('static', filename='img/robot.svg') }}" alt="Emerging technologies">
+					</div>
+				</div>
+				<div class="circle"></div>
+				<div class="large-6 medium-6 small-12 columns">	
+					<p id="paragraph-line-3" class="paragraph">Eu pesquiso <strong>tecnologias com potencial disruptivo</strong>, como <strong>Bitcoin/blockchain</strong>, e uso meu conhecimento de design para transmitir o conteúdo de forma apropriada (<strong>infográficos</strong> e outros materiais gráficos) ou para ajudar a construir soluções tecnológicas focadas na experiência do usuário.</p>
+				</div>
+			</div>
+		</div>
+		<div id="pink-area">
+			<div id="line-4" class="row">
+				<div id="footer-text" class="large-8 large-centered small-12 columns">
+					<p class="h2-style">Selecionei alguns dos meus infográficos para você. 
+					<br>
+					Veja eles aqui no meu <a id="portfolio-link" class="main-section-links" href="{{ url_for('main.infograficos') }}">portfólio</a>.</p>
+					<p class="h2-style">Outros links que podem interessar:</p>
+					<ul id=social-media-list>
+						<li class="social-media"><a class="social-media-links" href="//medium.com/@patestevao">
+							<svg id="medium" enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x34__stroke"><g id="Medium"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd" height="128" width="128"/><g id="Medium_1_"><path clip-rule="evenodd" d="M88.877,9.944c-1.95-0.981-3.544,0.011-3.544,2.204v87.225     l35.578,17.897c3.915,1.969,7.089,0.591,7.089-3.079V30.195c0-0.351-0.198-0.673-0.51-0.831L88.877,9.944" fill="#ababab" fill-rule="evenodd"/><path clip-rule="evenodd" d="M42.667,77.911l40.589-66.355     c1.142-1.868,3.672-2.593,5.621-1.612l38.657,19.443c0.251,0.127,0.34,0.442,0.193,0.682L85.333,99.372L42.667,77.911" fill="#d0d0d0" fill-rule="evenodd"/><path clip-rule="evenodd" d="M5.907,11.132c-3.25-1.635-4.35-0.426-2.446,2.687     l39.206,64.091l42.666,21.461l-42.574-69.6c-0.06-0.098-0.147-0.177-0.25-0.229L5.907,11.132" fill="#e0e0e0" fill-rule="evenodd"/><path clip-rule="evenodd" d="M42.667,114.19c0,3.654-2.659,5.307-5.907,3.673L3.544,101.155     C1.595,100.174,0,97.578,0,95.385V13.476c0-2.924,2.127-4.246,4.726-2.938l37.711,18.968c0.141,0.071,0.23,0.215,0.23,0.373     V114.19" fill="#ffffff" fill-rule="evenodd"/></g></g></g></svg>
+						</a></li>
+						<li class="social-media"><a class="social-media-links" href="//twitter.com/patestevao">
+							<svg id="twitter" enable-background="new 0 0 128 128" id="Social_Icons" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="_x37__stroke"><g id="Twitter"><rect clip-rule="evenodd" fill="none" fill-rule="evenodd"/><path clip-rule="evenodd" d="M128,23.294    c-4.703,2.142-9.767,3.59-15.079,4.237c5.424-3.328,9.587-8.606,11.548-14.892c-5.079,3.082-10.691,5.324-16.687,6.526    c-4.778-5.231-11.608-8.498-19.166-8.498c-14.493,0-26.251,12.057-26.251,26.927c0,2.111,0.225,4.16,0.676,6.133    C41.217,42.601,21.871,31.892,8.91,15.582c-2.261,3.991-3.554,8.621-3.554,13.552c0,9.338,4.636,17.581,11.683,22.412    c-4.297-0.131-8.355-1.356-11.901-3.359v0.331c0,13.051,9.053,23.937,21.074,26.403c-2.201,0.632-4.523,0.948-6.92,0.948    c-1.69,0-3.343-0.162-4.944-0.478c3.343,10.694,13.035,18.483,24.53,18.691c-8.986,7.227-20.315,11.533-32.614,11.533    c-2.119,0-4.215-0.123-6.266-0.37c11.623,7.627,25.432,12.088,40.255,12.088c48.309,0,74.717-41.026,74.717-76.612    c0-1.171-0.023-2.342-0.068-3.49C120.036,33.433,124.491,28.695,128,23.294" fill="#fcfcfc" fill-rule="evenodd" id="Twitter_1_"/></g></g></svg>
+						</a></li>
+						<li class="social-media"><a class="social-media-links" href="//www.behance.net/patestevao">
+							<svg id="behance" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 195.826 122" enable-background="new 0 0 195.826 122" xml:space="preserve">
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M0,0c0.674,0.034,1.348,0.098,2.022,0.098
+								C20.573,0.104,39.125,0.07,57.676,0.121c6.856,0.019,13.628,0.749,20.054,3.382C85.483,6.68,91.278,11.96,93.97,19.98
+								c2.932,8.733,2.963,17.526-1.223,25.977c-2.024,4.088-5.383,6.961-9.29,9.22c-0.666,0.385-1.328,0.774-2.258,1.316
+								c1.787,0.891,3.376,1.596,4.882,2.448c8.349,4.729,12.361,12.247,13.454,21.48c1.023,8.646-0.559,16.832-5.184,24.279
+								c-3.864,6.223-9.113,10.904-16.003,13.611c-7.914,3.109-16.231,3.541-24.582,3.567c-17.249,0.055-34.497,0.016-51.746,0.021
+								c-0.674,0-1.348,0.063-2.022,0.098C0,81.333,0,40.667,0,0z M28.151,100.75c0.745,0,1.308,0,1.87,0c4.271,0,8.542,0.045,12.813-0.011
+								c5.621-0.073,11.249-0.068,16.857-0.396c4.091-0.239,7.839-1.673,10.633-4.896c3.743-4.318,4.149-9.47,3.621-14.851
+								c-0.582-5.931-4.858-9.993-10.263-11.127c-3.237-0.68-6.581-1.09-9.887-1.158c-7.966-0.162-15.938-0.017-23.906-0.086
+								c-1.438-0.013-1.858,0.378-1.85,1.826c0.06,9.688,0.03,19.376,0.034,29.063C28.073,99.575,28.115,100.037,28.151,100.75z
+								 M42.414,48.163c3.646,0,7.296,0.114,10.936-0.038c2.691-0.112,5.412-0.366,8.041-0.924c3.692-0.784,7.114-2.305,8.886-5.949
+								c1.495-3.074,1.771-6.407,1.203-9.769c-0.763-4.507-3.146-7.727-7.776-8.686c-3.346-0.693-6.762-1.335-10.162-1.429
+								c-8.015-0.221-16.039-0.075-24.059-0.145c-1.26-0.011-1.436,0.5-1.431,1.574c0.034,7.916,0.046,15.833-0.011,23.749
+								c-0.009,1.345,0.467,1.664,1.719,1.646C33.976,48.127,38.195,48.166,42.414,48.163z"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M195.826,81.021c-0.413-0.032-0.826-0.092-1.24-0.092
+								c-20.224-0.005-40.448-0.004-60.672-0.004c-0.462,0-0.924,0-1.682,0c0.181,1.675,0.274,3.21,0.522,4.72
+								c1.598,9.74,8.517,16.022,18.37,16.761c4.098,0.307,8.111,0.128,11.925-1.643c2.961-1.374,5.432-3.324,6.998-6.21
+								c0.797-1.467,1.768-1.993,3.457-1.965c6.356,0.106,12.717,0.042,19.076,0.042c0.562,0,1.126,0,2.004,0
+								c-0.308,1.404-0.433,2.639-0.851,3.766c-2.478,6.683-6.829,11.985-12.415,16.288c-8.212,6.323-17.764,8.346-27.879,8.406
+								c-11.467,0.068-21.748-3.435-30.686-10.595c-6.203-4.969-9.891-11.615-11.654-19.29c-2.626-11.429-2.539-22.873,0.689-34.167
+								c2.404-8.41,7.191-15.289,14.311-20.49c8.457-6.18,18.065-8.284,28.317-7.949c7.693,0.252,15.081,1.853,21.835,5.748
+								c5.354,3.086,9.437,7.449,12.71,12.64c4.163,6.602,6.02,13.889,6.548,21.588c0.035,0.504,0.207,0.998,0.315,1.497
+								C195.826,73.722,195.826,77.371,195.826,81.021z M171.901,65.789c-0.078-10.589-7.506-18.372-19.535-18.456
+								c-12.899-0.09-18.417,9.263-19.313,18.456C146.009,65.789,158.955,65.789,171.901,65.789z"/>
+							<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M127.94,17.256c0-4.118,0-8.005,0-12.008c16.286,0,32.51,0,48.88,0
+								c0,3.791,0.02,7.481-0.037,11.172c-0.005,0.279-0.501,0.644-0.845,0.797c-0.306,0.137-0.717,0.038-1.082,0.038
+								c-15.059,0.001-30.118,0.001-45.177,0.001C129.165,17.256,128.65,17.256,127.94,17.256z"/>
+							</svg>
+						</a></li>
+						<li class="social-media"><a class="social-media-links" href="//github.com/patestevao">
+							<svg id="github" enable-background="new 0 0 32 32" id="Layer_1" version="1.0" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path clip-rule="evenodd" d="M16.003,0C7.17,0,0.008,7.162,0.008,15.997  c0,7.067,4.582,13.063,10.94,15.179c0.8,0.146,1.052-0.328,1.052-0.752c0-0.38,0.008-1.442,0-2.777  c-4.449,0.967-5.371-2.107-5.371-2.107c-0.727-1.848-1.775-2.34-1.775-2.34c-1.452-0.992,0.109-0.973,0.109-0.973  c1.605,0.113,2.451,1.649,2.451,1.649c1.427,2.443,3.743,1.737,4.654,1.329c0.146-1.034,0.56-1.739,1.017-2.139  c-3.552-0.404-7.286-1.776-7.286-7.906c0-1.747,0.623-3.174,1.646-4.292C7.28,10.464,6.73,8.837,7.602,6.634  c0,0,1.343-0.43,4.398,1.641c1.276-0.355,2.645-0.532,4.005-0.538c1.359,0.006,2.727,0.183,4.005,0.538  c3.055-2.07,4.396-1.641,4.396-1.641c0.872,2.203,0.323,3.83,0.159,4.234c1.023,1.118,1.644,2.545,1.644,4.292  c0,6.146-3.74,7.498-7.304,7.893C19.479,23.548,20,24.508,20,26c0,2,0,3.902,0,4.428c0,0.428,0.258,0.901,1.07,0.746  C27.422,29.055,32,23.062,32,15.997C32,7.162,24.838,0,16.003,0z" fill="#fcfcfc" fill-rule="evenodd"/><g/><g/><g/><g/><g/><g/></svg>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+{% endblock content %}
