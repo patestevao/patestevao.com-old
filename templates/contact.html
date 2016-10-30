@@ -1,19 +1,15 @@
 {% extends 'base.html' %}
+
+{% block header_title %}Fale comigo{% endblock header_title %}
+
 {% block content %}
-<div class="row">
+<div class="subpage-container row">
 	<div class="small-12 small-centered columns">
-		<h1 id="title">Contact <a class="link" href="index.html">@patestevao</a></h1>
-	</div>
-</div>
-<div class="row">
-	<div class="small-12 small-centered columns" id="text">
-		The best way to contact me is through my e-mail <a class="link" href="mailto:contact@patestevao.com">contact@patestevao.com</a>.
-		<br>
-		To make it more private, you can send me a PGP encrypted message
-		<br>
-		using my PGP key, which is F194 482B.
-		<br>
-		If this is not what you are looking for, go back to <a class="link" href="index.html">Home</a>.
+		<p class="subpage-paragraph">
+		Você pode entrar em contato comigo através do email <a class="main-section-links" href="mailto:contact@patestevao.com">contact@patestevao.com</a>.</p> 
+		<p class="subpage-paragraph">PGP: <a class="main-section-links" href="{{ url_for('static', filename='contact@patestevao.com.asc') }}">A386 CED7 90E2 715C 37EA  6145 BBD3 997C F194 482B</a>.
+		</p>
 	</div>
 </div>	
+
 {% endblock content %}

@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
+
+{% block header_title %}Ops, Error 404{% endblock header_title %}
+
 {% block content %}
-<div id="error-404-content">
-	<div class="row">
-		<div class="small-12 columns">
-			<h2>Ops, Error 404.</h2>
-			<p>The page you are looking for isn't here.</p>
-			<p>You can come back to the <a href="index.html">home page</a>, if you wish.</p>
-			<p>Or you can go another way, as long as you know where you want to go ;)</p>
-			<div id="quote-container">	
-				<p class="quote"><em>“Would you tell me, please, which way I ought to go from here?"</em></p>
-				<p class="quote"><em>"That depends a good deal on where you want to get to."</em></p>
-				<p class="quote"><em>"I don't much care where –"</em></p>
-				<p class="quote"><em>"Then it doesn't matter which way you go.”</em></p>
-				<p id="author">- Lewis Carroll, Alice in Wonderland</p>
-			</div>
+<div class="subpage-container row">
+	<div class="small-12 columns">
+		<p class="subpage-paragraph">The page you are looking for isn't here.</p>
+		<p class="subpage-paragraph">You can come back to the <a class="main-section-links" href="index.html">home page</a>, if you wish.</p>
+		<p class="subpage-paragraph">Or you can go another way, as long as you know where you want to go ;)</p>
+		<div id="quote-container">	
+			<p class="quote"><em>“Would you tell me, please, which way I ought to go from here?"</em></p>
+			<p class="quote"><em>"That depends a good deal on where you want to get to."</em></p>
+			<p class="quote"><em>"I don't much care where –"</em></p>
+			<p class="quote"><em>"Then it doesn't matter which way you go.”</em></p>
+			<p id="author">- Lewis Carroll, Alice in Wonderland</p>
 		</div>
 	</div>
 </div>
