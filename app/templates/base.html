@@ -2,14 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
 	<title>Patrícia Estevão</title>
 	<link rel="icon" type="image/ico" href="{{ url_for('static', filename='favicon.ico') }}">
     {% assets "css_all" %}
     <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
     {% endassets %}
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Sue+Ellen+Francisco" rel="stylesheet"> 
-	<!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"> -->
+	
+	<meta content="I'm a UX and Information Designer." name="description">
+	<meta content="Patrícia Estevão" name="author">
+	<meta content="Hi, I'm Patrícia Estevão." itemprop="name">
+	<meta content="I'm a UX and Information Designer." itemprop="description">
+	<meta content="{{ url_for('static', filename='img/quadrada.jpg') }}" itemprop="image">
+
+	<!-- OG tags -->
+	<meta content="Patrícia Estevão" property="og:site_name">
+	<meta content="website" property="og:type">
+	<meta content="pt_BR" property="og:locale">
+	<meta content="Hi, I'm Patrícia Estevão" property="og:title">
+	<meta content="I'm a UX and Information Designer." property="og:description">
+	<meta content="//patestevao.com" property="og:url">
+	<meta content="{{ url_for('static', filename='img/quadrada.jpg') }}" property="og:image">
+
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
