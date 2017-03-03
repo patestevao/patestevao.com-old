@@ -1,3 +1,6 @@
+
+/*base template style*/
+
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -5,11 +8,7 @@ body {
   min-height: 100%;
 }
 
-#body-wrapper {
-  height: 100%;
-  display: table;
-}
-#left {
+.left {
   display: table-column;
   height: 100%;
   float: left;
@@ -19,52 +18,52 @@ body {
   padding-top: 3em;
   padding-bottom: 4em;
   text-align: left;
-  /*background: linear-gradient(to top, #ECE9E6, #ffffff);*/
 }
-#right {
+
+.right {
   display: table-column;
   height: 100%;
   float: right;
-  /*background: linear-gradient(to top, #b24592, #F15F79);*/
   background: linear-gradient(to bottom, #f857a6, #ff5858);
   width: 30vw;
   padding-top: 3em;
   padding-bottom: 4em;
 }
+
 @media(max-width: 950px) {
-  #left {
+  .left {
     width:60vw;
     padding-left: 3em;
     padding-right: 3em;
   }
-  #right {
+  .right {
     width: 40vw;
   }
 }
 
 @media (max-width: 670px) {
-  #left, #right {
+  .left, .right {
     float: none;
     width: 100vw;
     display: block;
     position: relative;
     height: auto;
   }
-  #left {
+  .left {
     padding-bottom: 1em;
   }
-  #right {
+  .right {
     padding-top: 2em;
   }
 }
 @media (max-width:500px) {
-  #left {
+  .left {
     padding-left: 2em;
     padding-right: 2em;
   }
 }
 @media (max-width:380px) {
-  #left {
+  .left {
     padding-left: 1em;
     padding-right: 1em;
     padding-top: 1.5em;
@@ -86,6 +85,10 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+#social-media-list {
+  margin-top: 20px;
 }
 
 #contact-container {
@@ -150,7 +153,7 @@ body {
 }
 
 #mail-img {
-  width: 32px;
+  width: 28px;
   height: auto;
 }
 
@@ -161,7 +164,7 @@ body {
 
 .contact-text {
   font-weight: 300;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 
 .social-media-item {
@@ -189,8 +192,8 @@ body {
 }
 
 .social-media-link:hover .social-media-img{
-  border: 2px solid #7F3168;
-  background-color: #7F3168;
+  border: 2px solid #CA4657;
+  background-color: #CA4657;
 }
 
 @media (max-width: 1100px) {
@@ -209,6 +212,11 @@ body {
   }
 }
 
+/*end base template style*/
+
+
+/*index page style*/
+
 #picture {
   height: 180px;
   width: auto;
@@ -224,7 +232,7 @@ body {
 h1 {
   margin: 0;
   font-weight: 300;
-  color: #F15F79;
+  color: #f857a6;
   font-size: 2.2em;
   margin-top: 0.2em;
 }
@@ -232,7 +240,7 @@ h1 {
 h2 {
   margin: 0;
   font-weight: 300;
-  color: #F15F79;
+  color: #f857a6;
   font-size: 1.4em;
   margin-top: 0.5em;
 }
@@ -283,7 +291,7 @@ h2 {
 
 #infographics-cta {
   margin-top: 2em;
-  color: #F15F79;
+  color: #f857a6;
   margin-bottom: 4em;
 }
 
@@ -295,9 +303,9 @@ h2 {
 #infographics-button {
   font-weight: 400;
   font-size: 1.2em;
-  color: #F15F79;
+  color: #f857a6;
   text-decoration: none;
-  border: 2px solid #F15F79;
+  border: 2px solid #f857a6;
   border-radius: 5px;
   padding: 12px 15px;
   margin-top: 3em;
@@ -338,3 +346,168 @@ h2 {
 .arrow {
   margin-left: 5px;
 }
+
+/*end index page style*/
+
+
+
+/*infographic page style*/
+
+#infographics-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#infographic-container {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 400;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.infographic-container {
+  margin: 0;
+  width: 250px;
+  height: 250px;
+  padding: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+@media (max-width: 1334px) {
+  .infographic-container {
+    width: 48%;
+    height: auto;
+  }
+}
+@media (max-width: 900px) {
+  .infographic-container {
+    width: 85%;
+    height: auto;
+  }
+}
+@media (max-width: 670px) {
+  .infographic-container {
+    width: 48%;
+  }
+}
+@media (max-width: 470px) {
+  .infographic-container {
+    width: 95%;
+  }
+}
+
+.container1 {
+  height: 100%;
+  width: 100%;
+  border: 10px solid #f0f0f0;
+  position: relative;
+  overflow: hidden;
+  margin:auto;
+}
+
+.infographic-sample {
+  height: 100%;
+  width: auto;
+  display: block;
+  position: relative;
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.mask1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background: linear-gradient(to bottom, #f857a6, #ff5858);
+  opacity: 0;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+}
+
+.container1:hover .infographic-sample{
+  transform: scale(1.1);
+}
+
+.container1:hover .mask1 {
+  opacity: 0.9;
+}
+
+.container1:hover h3 {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.small-title {
+  padding-top: 30%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.big-title {
+  padding-top: 22%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.mask1 h3, .mask1 p {
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+@media (max-width: 670px) {
+  .mask1 h3 {
+    font-size: 1em;
+  }
+  .small-title {
+    padding-top: 35%;
+  }
+  .big-title {
+    padding-top: 30%;
+  }
+}
+
+/*end infographic page style*/
+
+
+
+
+/*error 404 page style*/
+
+#quote-container {
+  text-align: left;
+  margin-top: 80px;
+  color: #f857a6;
+}
+
+#error-container {
+  color: #555;
+  text-align: left;
+}
+
+#error-title {
+  font-size: 1.8em;
+  color: #555;
+  font-weight: 300;
+  text-align: left;
+  margin-top: 0;
+}
+
+.error-link {
+  color: #f857a6;
+}
+
+/*end error 404 page style*/
