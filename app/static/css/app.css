@@ -5,36 +5,54 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   height: 100%;
-  min-height: 100%;
+  min-height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
 
+a:hover {
+  cursor: pointer; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+
 .left {
-  display: table-column;
+  margin: 0;
   height: 100%;
+  min-height: 100%;
   float: left;
   width: 70vw;
-  padding-left: 5em;
-  padding-right: 6em;
+  padding-left: 10vw;
+  padding-right: 10vw;
   padding-top: 3em;
-  padding-bottom: 4em;
+  padding-bottom: 0;
   text-align: left;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 .right {
-  display: table-column;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  margin: 0;
   height: 100%;
+  min-height: 100%;
   float: right;
   background: linear-gradient(to bottom, #f857a6, #ff5858);
   width: 30vw;
   padding-top: 3em;
-  padding-bottom: 4em;
+  padding-bottom: 2em;
 }
 
 @media(max-width: 950px) {
   .left {
     width:60vw;
-    padding-left: 3em;
-    padding-right: 3em;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .right {
     width: 40vw;
@@ -181,8 +199,8 @@ body {
 }
 
 .social-media-img {
-  height: 45px;
-  width: 45px;
+  height: 25px;
+  width: 25px;
   border: 2px solid rgba(255,255,255,0.5);
   padding: 8px;
   border-radius: 5px;
@@ -196,13 +214,13 @@ body {
   background-color: #CA4657;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   .social-media-item {
     margin-right: 6px;
   }
   .social-media-img {
-    height: 35px;
-    width: 35px;
+    height: 22px;
+    width: 22px;
     padding: 5px;
   }
 }
@@ -358,7 +376,7 @@ h2 {
   padding: 0;
   list-style-type: none;
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 #infographic-container {
@@ -376,16 +394,18 @@ h3 {
 
 .infographic-container {
   margin: 0;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
   text-align: center;
   display: inline-block;
 }
 
-@media (max-width: 1334px) {
+@media (max-width: 1289px) {
   .infographic-container {
-    width: 48%;
+    width: 22vw;
     height: auto;
   }
 }
@@ -397,12 +417,12 @@ h3 {
 }
 @media (max-width: 670px) {
   .infographic-container {
-    width: 48%;
+    width: 40vw;
   }
 }
-@media (max-width: 470px) {
+@media (max-width: 500px) {
   .infographic-container {
-    width: 95%;
+    width: 80%;
   }
 }
 
