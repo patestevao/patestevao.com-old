@@ -248,10 +248,19 @@ img {
   margin-left: 1.5em;
 }
 
+.pink-link {
+  color: #FB5781;
+  transition: color 0.1s ease-in;
+}
+
+.pink-link:hover {
+  color: #ff5858
+}
+
 h1 {
   margin: 0;
   font-weight: 300;
-  color: #f857a6;
+  color: #FB5781;
   font-size: 2.2em;
   margin-top: 0.2em;
 }
@@ -259,7 +268,7 @@ h1 {
 h2 {
   margin: 0;
   font-weight: 300;
-  color: #f857a6;
+  color: #FB5781;
   font-size: 1.4em;
   margin-top: 0.5em;
 }
@@ -310,7 +319,7 @@ h2 {
 
 #infographics-cta {
   margin-top: 2em;
-  color: #f857a6;
+  color: #FB5781;
   margin-bottom: 4em;
 }
 
@@ -322,9 +331,9 @@ h2 {
 #infographics-button {
   font-weight: 400;
   font-size: 1.2em;
-  color: #f857a6;
+  color: #FB5781;
   text-decoration: none;
-  border: 2px solid #f857a6;
+  border: 2px solid #FB5781;
   border-radius: 5px;
   padding: 12px 15px;
   margin-top: 3em;
@@ -453,7 +462,7 @@ h3 {
   position: absolute;
   top:0;
   left:0;
-  background: linear-gradient(to bottom, #f857a6, #ff5858);
+  background: linear-gradient(to bottom, #FB5781, #ff5858);
   opacity: 0;
   color: #fff;
   text-align: center;
@@ -513,7 +522,7 @@ h3 {
 #quote-container {
   text-align: left;
   margin-top: 80px;
-  color: #f857a6;
+  color: #FB5781;
 }
 
 #error-container {
@@ -527,10 +536,6 @@ h3 {
   font-weight: 300;
   text-align: left;
   margin-top: 0;
-}
-
-.error-link {
-  color: #f857a6;
 }
 
 /*end error 404 page style*/
