@@ -1,6 +1,10 @@
 
 /*base template style*/
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
