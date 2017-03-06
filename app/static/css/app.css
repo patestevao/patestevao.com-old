@@ -3,6 +3,7 @@
 
 html {
   height: 100%;
+  min-height: 100vh;
 }
 
 body {
@@ -11,7 +12,7 @@ body {
   height: 100%;
   min-height: 100vh;
   line-height: 1.5;
-  margin: 0;
+  /*margin: 0;*/
   padding: 0;
   position: relative;
 }
@@ -28,7 +29,8 @@ img {
   margin: 0;
   height: 100%;
   min-height: 100%;
-  float: left;
+  position: absolute;
+  left: 0;
   width: 70vw;
   padding-left: 10vw;
   padding-right: 10vw;
@@ -44,8 +46,9 @@ img {
   -moz-box-sizing: border-box;
   margin: 0;
   height: 100%;
-  min-height: 100%;
-  float: right;
+  min-height: 100vh;
+  position: fixed;
+  right: 0;
   background: linear-gradient(to bottom, #f857a6, #ff5858);
   width: 30vw;
   padding-top: 3em;
@@ -65,11 +68,11 @@ img {
 
 @media (max-width: 670px) {
   .left, .right {
-    float: none;
     width: 100vw;
     display: block;
     position: relative;
     height: auto;
+    min-height: auto;  
   }
   .left {
     padding-bottom: 1em;
@@ -120,11 +123,16 @@ img {
   padding-right: 0.5em;
   color: #fff;
   font-size: 1em;
-  margin-top: 22em;
+  margin-top: 55vh;
 }
-@media (max-width: 1200px) {
+@media (max-height: 635px) {
   #contact-container {
-    margin-top: 25em;
+    margin-top: 45vh;
+  }
+}
+@media (max-height: 500px) {
+  #contact-container {
+    margin-top: 25vh;
   }
 }
 @media (max-width: 670px) {
