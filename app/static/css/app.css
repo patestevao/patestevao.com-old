@@ -15,6 +15,10 @@ body {
   /*margin: 0;*/
   padding: 0;
   position: relative;
+  background: url('../img/background-pattern.png');
+  background-repeat: repeat;
+  background-size: auto;
+  background-blend-mode: lighten;
 }
 
 a:hover {
@@ -72,7 +76,7 @@ img {
     display: block;
     position: relative;
     height: auto;
-    min-height: auto;  
+    min-height: auto;
   }
   .left {
     padding-bottom: 1em;
@@ -253,6 +257,7 @@ img {
   width: auto;
   border-radius: 5px;
   float: left;
+  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
 }
 
 #presentation {
@@ -261,7 +266,7 @@ img {
 }
 
 .pink-link {
-  color: #FB5781;
+  color: #F857A5;
   transition: color 0.1s ease-in;
 }
 
@@ -272,7 +277,7 @@ img {
 h1 {
   margin: 0;
   font-weight: 300;
-  color: #FB5781;
+  color: #F857A5;
   font-size: 2.2em;
   margin-top: 0.2em;
 }
@@ -280,7 +285,7 @@ h1 {
 h2 {
   margin: 0;
   font-weight: 300;
-  color: #FB5781;
+  color: #F857A5;
   font-size: 1.4em;
   margin-top: 0.5em;
 }
@@ -331,7 +336,7 @@ h2 {
 
 #infographics-cta {
   margin-top: 2em;
-  color: #FB5781;
+  color: #F857A5;
   margin-bottom: 4em;
 }
 
@@ -343,9 +348,9 @@ h2 {
 #infographics-button {
   font-weight: 400;
   font-size: 1.2em;
-  color: #FB5781;
+  color: #F857A5;
   text-decoration: none;
-  border: 2px solid #FB5781;
+  border: 2px solid #F857A5;
   border-radius: 5px;
   padding: 12px 15px;
   margin-top: 3em;
@@ -474,7 +479,7 @@ h3 {
   position: absolute;
   top:0;
   left:0;
-  background: linear-gradient(to bottom, #FB5781, #ff5858);
+  background: linear-gradient(to bottom, #F857A5, #ff5858);
   opacity: 0;
   color: #fff;
   text-align: center;
@@ -534,7 +539,7 @@ h3 {
 #quote-container {
   text-align: left;
   margin-top: 80px;
-  color: #FB5781;
+  color: #F857A5;
 }
 
 #error-container {
