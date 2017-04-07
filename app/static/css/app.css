@@ -53,7 +53,7 @@ img {
   min-height: 100vh;
   position: fixed;
   right: 0;
-  background: linear-gradient(to bottom, #f857a6, #ff5858);
+  background: linear-gradient(to bottom, #dd2476, #ff512f);
   width: 30vw;
   padding-top: 3em;
   padding-bottom: 2em;
@@ -227,8 +227,8 @@ img {
 }
 
 .social-media-link:hover .social-media-img{
-  border: 2px solid #CA4657;
-  background-color: #CA4657;
+  border: 2px solid #FF917B;
+  background-color: #FF917B;
 }
 
 @media (max-width: 1200px) {
@@ -266,18 +266,18 @@ img {
 }
 
 .pink-link {
-  color: #F857A5;
+  color: #E63063;
   transition: color 0.1s ease-in;
 }
 
 .pink-link:hover {
-  color: #ff5858
+  color: #A11A56;
 }
 
 h1 {
   margin: 0;
   font-weight: 300;
-  color: #F857A5;
+  color: #E63063;
   font-size: 2.2em;
   margin-top: 0.2em;
 }
@@ -285,7 +285,7 @@ h1 {
 h2 {
   margin: 0;
   font-weight: 300;
-  color: #F857A5;
+  color: #E63063;
   font-size: 1.4em;
   margin-top: 0.5em;
 }
@@ -336,7 +336,7 @@ h2 {
 
 #infographics-cta {
   margin-top: 2em;
-  color: #F857A5;
+  color: #E63063;
   margin-bottom: 4em;
 }
 
@@ -348,13 +348,15 @@ h2 {
 #infographics-button {
   font-weight: 400;
   font-size: 1.2em;
-  color: #F857A5;
+  color: #fff;
+  background-color: #E63063;
   text-decoration: none;
-  border: 2px solid #F857A5;
+  border: 2px solid #E63063;
   border-radius: 5px;
   padding: 12px 15px;
   margin-top: 3em;
-  transition: all 1s ease-in;
+  /*transition: all 1s ease-in;*/
+  box-shadow: 2px 2px 0px 2px #A11A56;
 }
 
 #arrow {
@@ -479,7 +481,7 @@ h3 {
   position: absolute;
   top:0;
   left:0;
-  background: linear-gradient(to bottom, #F857A5, #ff5858);
+  background: linear-gradient(to bottom, #dd2476, #ff512f);
   opacity: 0;
   color: #fff;
   text-align: center;
@@ -539,7 +541,7 @@ h3 {
 #quote-container {
   text-align: left;
   margin-top: 80px;
-  color: #F857A5;
+  color: #E63063;
 }
 
 #error-container {
