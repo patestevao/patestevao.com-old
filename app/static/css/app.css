@@ -271,13 +271,13 @@ img {
 }
 
 .pink-link:hover {
-  color: #A11A56;
+  color: #B72947;
 }
 
 h1 {
   margin: 0;
   font-weight: 300;
-  color: #E63063;
+  color: #EA355B;
   font-size: 2.2em;
   margin-top: 0.2em;
 }
@@ -285,7 +285,7 @@ h1 {
 h2 {
   margin: 0;
   font-weight: 300;
-  color: #E63063;
+  color: #EA355B;
   font-size: 1.4em;
   margin-top: 0.5em;
 }
@@ -336,7 +336,7 @@ h2 {
 
 #infographics-cta {
   margin-top: 2em;
-  color: #E63063;
+  color: #EA355B;
   margin-bottom: 4em;
 }
 
@@ -349,14 +349,14 @@ h2 {
   font-weight: 400;
   font-size: 1.2em;
   color: #fff;
-  background-color: #E63063;
+  background-color: #EA355B;
   text-decoration: none;
-  border: 2px solid #E63063;
+  border: 2px solid #EA355B;
   border-radius: 5px;
   padding: 12px 15px;
   margin-top: 3em;
   /*transition: all 1s ease-in;*/
-  box-shadow: 2px 2px 0px 2px #A11A56;
+  box-shadow: 2px 2px 0px 2px #B72947;
 }
 
 #arrow {
