@@ -129,6 +129,11 @@ img {
   font-size: 1em;
   margin-top: 55vh;
 }
+@media (max-height: 1050px) and (max-width: 1300px) {
+  #contact-container {
+    margin-top: 40vh;
+  }
+}
 @media (max-height: 635px) {
   #contact-container {
     margin-top: 45vh;
@@ -206,7 +211,7 @@ img {
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .social-media-link {
@@ -231,19 +236,10 @@ img {
   background-color: #FF917B;
 }
 
-@media (max-width: 1200px) {
-  .social-media-item {
-    margin-right: 6px;
-  }
-  .social-media-img {
-    height: 22px;
-    width: 22px;
-    padding: 5px;
-  }
-}
-@media (max-width: 670px) {
-  .social-media-item {
-    margin-right: 10px;
+@media (max-width: 1300px) {
+  .line-2 {
+    display: inline-block;
+    margin-top: 12px;
   }
 }
 
