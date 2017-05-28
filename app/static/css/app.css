@@ -30,7 +30,7 @@ img {
   height: auto; }
 
 
-.left {
+#left {
   margin: 0;
   height: 100%;
   min-height: 100%;
@@ -46,7 +46,7 @@ img {
   -moz-box-sizing: border-box;
 }
 
-.right {
+#right {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   margin: 0;
@@ -61,42 +61,42 @@ img {
 }
 
 @media(max-width: 950px) {
-  .left {
+  #left {
     width:60vw;
     padding-left: 5vw;
     padding-right: 5vw;
   }
-  .right {
+  #right {
     width: 40vw;
   }
 }
 
 @media (max-width: 670px) {
-  .left, .right {
+  #left, #right {
     width: 100vw;
     display: block;
     position: relative;
     height: auto;
     min-height: auto;
   }
-  .left {
+  #left {
     padding-bottom: 1em;
+    padding-top: 1.5em;
   }
-  .right {
+  #right {
     padding-top: 2em;
   }
 }
 @media (max-width:500px) {
-  .left {
+  #left {
     padding-left: 2em;
     padding-right: 2em;
   }
 }
 @media (max-width:380px) {
-  .left {
+  #left {
     padding-left: 1em;
     padding-right: 1em;
-    padding-top: 1.5em;
   }
 }
 
@@ -128,7 +128,7 @@ img {
   padding-right: 0.5em;
   color: #fff;
   font-size: 1.1em;
-  margin-top: 55vh;
+  margin-top: 50vh;
 }
 @media (max-height: 1050px) and (max-width: 1300px) {
   #contact-container {
@@ -148,6 +148,7 @@ img {
 @media (max-width: 670px) {
   #contact-container {
     margin-top: 0;
+    padding-bottom: 2em;
   }
 }
 
@@ -395,6 +396,82 @@ h2 {
 }
 
 /*end index page style*/
+
+
+
+
+/*mobile nav (js generated) style*/
+
+#mobile-nav {
+  position: fixed;
+  bottom:0;
+  background-color: #F9493B;
+  text-align: center;
+  width: 100%;
+}
+
+.mobile-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.mobile-nav-item {
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.7em 0.2em 0.5em 0.2em;
+}
+
+.mobile-nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.1em;
+/*  margin: 0 0.5em;*/
+  padding: 0.3em 0 0 0;
+  text-decoration: none;
+}
+
+.mobile-nav-link::after {
+  content: '';
+  height: 4px;
+  margin-top: 2px;
+  width: 0;
+  background-color: #fff;
+  display: block;
+  transition-property: width;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+
+.mobile-nav-link:hover::after,
+  .mobile-nav-link:focus::after {
+  width: 100%;
+}
+
+@media(max-width: 400px) {
+  .mobile-nav-item {
+    margin: 0 0.5em;
+  }
+
+  .mobile-nav-link {
+    font-size: 1em;
+  }
+}
+
+@media(max-width: 330px) {
+  .mobile-nav-item {
+    margin: 0 0.3em;
+  }
+
+  .mobile-nav-link {
+    font-size: 0.9em;
+  }
+}
+
+/*end mobile nav style*/
+
 
 
 

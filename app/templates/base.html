@@ -8,9 +8,9 @@
     {% assets "css_all" %}
     <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
     {% endassets %}
-		{% assets "js_all" %}
-		<script src="{{ ASSET_URL }}"></script>
-		{% endassets %}
+	{% assets "js_all" %}
+	<script src="{{ ASSET_URL }}"></script>
+	{% endassets %}
 	<link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
 
 	<meta content="I'm a UX and Product Designer." name="description">
@@ -40,14 +40,14 @@
 	</script>
 </head>
 <body>
-	<div class="left">
+	<div id="left">
 	{% block content %}
 	{% endblock content %}
 	</div>
 	<div id="right" class="right">
 		<nav id="navigation">
 			<ul id="nav-list">
-				<li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="{{ url_for('main.index') }}">Home</a></li>
 				<li class="nav-item"><a class="nav-link" href="{{ url_for('main.infograficos') }}">Infographics</a></li>
 			</ul>
 		</nav>
