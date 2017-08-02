@@ -7,15 +7,13 @@ html {
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
   height: 100%;
   min-height: 100vh;
   line-height: 1.5;
-  /*margin: 0;*/
   padding: 0;
   position: relative;
-  /*background: url('../img/background-pattern.png');*/
   background-color: #fcfcfc;
   background-repeat: repeat;
   background-size: auto;
@@ -29,6 +27,9 @@ img {
   max-width: 100%;
   height: auto; }
 
+p {
+  font-weight: 300;
+}
 
 #left {
   margin: 0;
@@ -54,7 +55,8 @@ img {
   min-height: 100vh;
   position: fixed;
   right: 0;
-  background: linear-gradient(to bottom, #dd2476, #ff512f);
+  /*background: linear-gradient(to bottom, #dd2476, #ff512f);*/
+  background-color: #ff0055;
   width: 30vw;
   padding-top: 3em;
   padding-bottom: 2em;
@@ -108,7 +110,6 @@ img {
 @media (max-width: 670px) {
   #navigation {
     margin-bottom: 4em;
-    /*border-bottom: 2px solid rgba(255,255,255,0.2);*/
   }
 }
 
@@ -163,6 +164,9 @@ img {
 .nav-link {
   color: #fff;
   text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
 }
 
 .nav-link::after {
@@ -183,8 +187,9 @@ img {
 }
 
 .contact-title {
+  font-family: "Oswald", sans-serif;
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.6em;
 }
 
 .mail-item {
@@ -202,11 +207,11 @@ img {
 
 .contact-link {
   color: #fff;
-  font-weight: 300;
+  /*font-weight: 300;*/
 }
 
 .contact-text {
-  font-weight: 300;
+  /*font-weight: 300;*/
   font-size: 0.8em;
 }
 
@@ -236,8 +241,8 @@ img {
 
 .social-media-link:hover .social-media-img,
   .social-media-link:focus .social-media-img{
-  border: 2px solid #FF917B;
-  background-color: #FF917B;
+  border: 2px solid rgba(255,255,255,0.2);
+  background-color: rgba(255,255,255,0.3);
 }
 
 @media (max-width: 1300px) {
@@ -266,28 +271,28 @@ img {
 }
 
 .pink-link {
-  color: #E63063;
+  color: #ff0055;
   transition: color 0.1s ease-in;
 }
 
 .pink-link:hover,
   .pink-link:focus {
-  color: #B72947;
+  color: rgb(185,0,42);
 }
 
 h1 {
+  font-family: 'Oswald', sans-serif;
   margin: 0;
-  font-weight: 300;
-  color: #EA355B;
-  font-size: 2.2em;
+  color: rgb(85,80,80);
+  font-size: 2.6em;
   margin-top: 0.2em;
 }
 
 h2 {
+  font-family: 'Oswald', sans-serif;
   margin: 0;
-  font-weight: 300;
-  color: #EA355B;
-  font-size: 1.4em;
+  color: rgb(85,80,80);
+  font-size: 1.6em;
   margin-top: 0.5em;
 }
 
@@ -296,10 +301,10 @@ h2 {
     height: 140px;
   }
   h1 {
-    font-size: 1.85em;
+    font-size: 2em;
   }
   h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 
@@ -310,33 +315,37 @@ h2 {
 
 .bio-paragraph {
   font-size: 1.1em;
-  color: #444;
+  line-height: 1.8em;
+  color: #333;
   margin-top: 1em;
 }
 
 #infographics-cta {
   margin-top: 2em;
-  color: #EA355B;
+  color: rgb(85,80,80);
   margin-bottom: 4em;
 }
 
 #infographics-cta p {
-  font-size: 1.2em;
+  font-weight: 700;
+  font-size: 1.1em;
   margin-bottom: 1.8em;
 }
 
 #infographics-button {
-  font-weight: 400;
+  /*font-weight: 400;*/
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
   font-size: 1.2em;
   color: #fff;
-  background-color: #EA355B;
+  background-color: #ff0055;
   text-decoration: none;
-  border: 2px solid #EA355B;
+  border: 2px solid #ff0055;
   border-radius: 5px;
   padding: 12px 15px;
   margin-top: 3em;
   /*transition: all 1s ease-in;*/
-  box-shadow: 2px 2px 0px 2px #B72947;
+  box-shadow: 2px 2px 0px 2px rgb(185,0,42);
 }
 
 #arrow {
@@ -409,7 +418,7 @@ h2 {
 #mobile-nav {
   position: fixed;
   bottom:0;
-  background-color: #F9493B;
+  background-color: #ff0055;
   text-align: center;
   width: 100%;
 }
@@ -429,10 +438,11 @@ h2 {
 }
 
 .mobile-nav-link {
+  font-family: "Oswald", sans-serif;
   color: #fff;
   text-transform: uppercase;
-  font-size: 1.1em;
-/*  margin: 0 0.5em;*/
+  font-size: 1.2em;
+  letter-spacing: 1px;
   padding: 0.3em 0 0 0;
   text-decoration: none;
 }
@@ -539,7 +549,8 @@ h3 {
   position: absolute;
   top:0;
   left:0;
-  background: linear-gradient(to bottom, #dd2476, #ff512f);
+  /*background: linear-gradient(to bottom, #dd2476, #ff512f);*/
+  background-color: #ff0055;
   opacity: 0;
   color: #fff;
   text-align: center;
@@ -625,7 +636,7 @@ h3 {
 #quote-container {
   text-align: left;
   margin-top: 80px;
-  color: #E63063;
+  color: #ff0055;
 }
 
 #error-container {
