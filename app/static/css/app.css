@@ -349,10 +349,11 @@ h2 {
 }
 
 #arrow {
-  width: 20px;
-  height: auto;
-  margin-left: 8px;
+  height: 18px;
+  width: auto;
+  margin-left: 3px;
   margin-right: 3px;
+  margin-bottom: -2px;
 }
 
 @keyframes move-arrow{
