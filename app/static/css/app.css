@@ -316,8 +316,14 @@ h2 {
 .bio-paragraph {
   font-size: 1.1em;
   line-height: 1.8em;
-  color: #333;
-  margin-top: 1em;
+  color: rgb(85,80,80);
+  margin-top: 0.8em;
+}
+
+.bio-paragraph-title {
+  color: rgb(85,80,80);
+  font-size: 1.2em;
+  margin-top: 1.8em;
 }
 
 #infographics-cta {
@@ -332,6 +338,12 @@ h2 {
   margin-bottom: 1.8em;
 }
 
+.button-container {
+  display: block;
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
 #infographics-button {
   /*font-weight: 400;*/
   font-family: 'Oswald', sans-serif;
@@ -343,7 +355,6 @@ h2 {
   border: 2px solid #ff0055;
   border-radius: 5px;
   padding: 12px 15px;
-  margin-top: 3em;
   /*transition: all 1s ease-in;*/
   box-shadow: 2px 2px 0px 2px rgb(185,0,42);
 }
