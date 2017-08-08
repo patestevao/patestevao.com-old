@@ -507,7 +507,7 @@ h2 {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 2em;
 }
 
@@ -517,11 +517,23 @@ h2 {
   display: inline-block;
 }
 
-h3 {
+h4 {
   font-size: 1.2em;
   font-weight: 400;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+}
+
+.portfolio-section {
+  margin-bottom: 2.6em;
+  color: rgb(85,80,80);
+}
+
+.portfolio-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6em;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .infographic-container {
@@ -567,12 +579,12 @@ h3 {
   color: #fff;
   text-align: center;
   overflow: hidden;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .container1:hover .infographic-sample,
   .container1:focus .infographic-sample{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .container1:hover .mask1,
@@ -580,10 +592,10 @@ h3 {
   opacity: 0.9;
 }
 
-.container1:hover h3,
-  .container1:focus h3 {
+.container1:hover h4,
+  .container1:focus h4 {
   opacity: 1;
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
 }
 
 .small-title {
@@ -598,9 +610,9 @@ h3 {
   padding-left: 10px;
 }
 
-.mask1 h3, .mask1 p {
+.mask1 h4, .mask1 p {
   opacity: 0;
-  transition: all 0.2s linear;
+  transition: all 0.1s linear;
 }
 
 @media (max-width: 1289px) {
@@ -625,9 +637,14 @@ h3 {
     width: 88%;
   }
 }
+@media (max-width: 390px) {
+  .infographic-container {
+    width: 100%;
+  }
+}
 
 @media (max-width: 670px) {
-  .mask1 h3 {
+  .mask1 h4 {
     font-size: 1.1em;
   }
   .small-title {

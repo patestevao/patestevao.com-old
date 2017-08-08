@@ -9,17 +9,17 @@ window.onload = function() {
     }
 };
 
-window.addEventListener('resize', function() {
-    var nav = document.getElementById('navigation');
-    if (window.innerWidth <= 670) {
-        nav.parentNode.removeChild(nav);
-        createMobileNav();
-    } else if (window.innerWidth > 670) {
-        var mobileNav = document.getElementById('mobile-nav');
-        mobileNav.parentNode.removeChild(mobileNav);
-        recreateOriginalNav();
-    }
-});
+// window.addEventListener('resize', function() {
+//     var nav = document.getElementById('navigation');
+//     if (window.innerWidth <= 670) {
+//         nav.parentNode.removeChild(nav);
+//         createMobileNav();
+//     } else if (window.innerWidth > 670) {
+//         var mobileNav = document.getElementById('mobile-nav');
+//         mobileNav.parentNode.removeChild(mobileNav);
+//         recreateOriginalNav();
+//     }
+// });
 
 function recreateOriginalNav() {
     var newNav = document.createElement('nav');
@@ -35,9 +35,9 @@ function recreateOriginalNav() {
     var infographicItem = document.createElement('li');
     infographicItem.classList.add('nav-item');
     var infographicLink = document.createElement('a');
-    var infographicLink = document.createElement('a');
+    // var infographicLink = document.createElement('a');s
     infographicLink.classList.add('nav-link');
-    var infographicText = document.createTextNode('Infographics');
+    var infographicText = document.createTextNode('Portfolio');
     infographicLink.setAttribute('href', '/infograficos');
 
     homeLink.appendChild(homeText);
@@ -59,7 +59,7 @@ function createMobileNav() {
     var mobileNavList = document.createElement('ul');
     mobileNavList.classList.add('mobile-nav-list');
     mobileNavDiv.appendChild(mobileNavList);
-    var mobileNavArray = ['Home', 'Infographics', 'Contact'];
+    var mobileNavArray = ['Home', 'Portfolio', 'Contact'];
     var hrefArray = ["/", "/infograficos",
         "#contact-container" ];
 
