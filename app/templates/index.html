@@ -9,20 +9,22 @@
 	</div>
 	<div id="paragraphs">
 		<p class="bio-paragraph-title"><strong>Who am I?</strong></p>
-		<p class="bio-paragraph">I spent time researching and practicing in the fields of Interaction Design and User Experience (UX), and my
+		<p class="bio-paragraph">I spend time researching and working in the fields of Interaction Design and User Experience (UX), and my
 			focus is placed on the creation of products that efficiently solve problems in people's lives.</p>
-		<p class="bio-paragraph">I also developed skills for: visual identity creation, frontend development
+		<p class="bio-paragraph">I also have skills on: visual identity creation, frontend development
 			 and graphic design.</p>
 		<p class="bio-paragraph-title"><strong>Some peculiarities about my work.</strong></p>
-		<p class="bio-paragraph">My university education was actually on Environmental Engineering.</p>
-		<p class="bio-paragraph">I take a special liking to creating infographics.</p>
-		<p class="bio-paragraph">I'm very interested in Bitcoin and love doing work related to the technology.</p>
-		<p class="bio-paragraph">The last 2 items were combined in a project called <a class="pink-link" href="http://bitcoindesigned.com/">bitcoindesigned</a>.</p>
+		<ul class="paragraph-list">
+			<li class="paragraph-item bio-paragraph">My university education was actually on Environmental Engineering.</li>
+			<li class="paragraph-item bio-paragraph">I take a special liking to creating infographics.</li>
+			<li class="paragraph-item bio-paragraph">I'm very interested in Bitcoin and love doing work related to the technology.</li>
+			<li class="paragraph-item bio-paragraph">The last 2 items were combined in a project called <a class="pink-link" href="http://bitcoindesigned.com/">bitcoindesigned</a>.</li>
+		</ul>
 	</div>
 	<div id="infographics-cta">
 		<p>I've also selected some of my past work for you to see:</p>
 		<div class="button-container">
-			<a id="infographics-button" href="{{ url_for('main.infograficos') }}">Go to portfolio <img id="arrow" src="{{ url_for('static', filename='img/next-arrow.svg') }}" alt="">
+			<a id="infographics-button" href="{{ url_for('main.portfolio') }}">Go to portfolio <img class="arrow" src="{{ url_for('static', filename='img/arrow-white.svg') }}" alt="">
 			</a>
 		</div>
 	</div>

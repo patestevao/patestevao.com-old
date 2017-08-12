@@ -8,11 +8,6 @@ def index():
     return render_template('index.html')
 
 
-@main.route('/infograficos/')
-def infograficos():
-	return render_template('infograficos.html')
-
-
-@main.route('/contact/')
-def contact():
-	return render_template('contact.html')
+@main.route('/portfolio/')
+def portfolio():
+	return render_template('portfolio.html')

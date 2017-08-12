@@ -203,6 +203,7 @@ p {
 #mail-img {
   width: 28px;
   height: auto;
+  margin-bottom: -4px;
 }
 
 .contact-link {
@@ -322,8 +323,9 @@ h2 {
 
 .bio-paragraph-title {
   color: rgb(85,80,80);
-  font-size: 1.2em;
+  font-size: 1.4em;
   margin-top: 1.8em;
+  font-family: 'Oswald', sans-serif;
 }
 
 #infographics-cta {
@@ -345,7 +347,6 @@ h2 {
 }
 
 #infographics-button {
-  /*font-weight: 400;*/
   font-family: 'Oswald', sans-serif;
   letter-spacing: 1px;
   font-size: 1.2em;
@@ -355,16 +356,21 @@ h2 {
   border: 2px solid #ff0055;
   border-radius: 5px;
   padding: 12px 15px;
-  /*transition: all 1s ease-in;*/
   box-shadow: 2px 2px 0px 2px rgb(185,0,42);
 }
 
-#arrow {
-  height: 18px;
+.arrow {
+  height: 16px;
   width: auto;
   margin-left: 3px;
   margin-right: 3px;
-  margin-bottom: -2px;
+  margin-bottom: -1px;
+}
+
+.paragraph-list {
+  margin: 0;
+  padding: 0;
+  list-style: circle inside url("../img/arrow-pink.svg");
 }
 
 @keyframes move-arrow{
@@ -385,13 +391,14 @@ h2 {
   }
 }
 
-#infographics-button:hover #arrow,
-  #infographics-button:focus #arrow {
+#infographics-button:hover .arrow,
+  #infographics-button:focus .arrow {
   animation-name: move-arrow;
   animation-duration: 400ms;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
+
 .arrow {
   margin-left: 5px;
 }
