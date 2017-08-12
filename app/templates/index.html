@@ -8,18 +8,24 @@
 		Co-founder of <a class="pink-link" href="https://www.txplab.com/en/">txplab</a></h2>
 	</div>
 	<div id="paragraphs">
-		<p class="bio-paragraph">When I graduated in Environmental Engineering, my goal was to work with technologies that promote positive
-			changes in the world. Although I changed my profession, this motivation stayed the same.</p>
-		<p class="bio-paragraph">I spent time researching and practicing in the fields of Interaction Design and User Experience (UX), and my
-			focus is placed on the creation of products that efficiently solve problems in people's lives.
-			 In other words, products with clear features and purposes that are sufficiently easy to be used and deliver a good experience.</p>
-		<p class="bio-paragraph">I also developed skills in the fields of visual identity for companies and professionals, implementation
-			of websites and communication of technical and complex subjects through the creation of explanatory infographics
-			adapted to very different audiences.</p>
+		<p class="bio-paragraph-title"><strong>Who am I?</strong></p>
+		<p class="bio-paragraph">I spend time researching and working in the fields of Interaction Design and User Experience (UX), and my
+			focus is placed on the creation of products that efficiently solve problems in people's lives.</p>
+		<p class="bio-paragraph">I also have skills on: visual identity creation, frontend development
+			 and graphic design.</p>
+		<p class="bio-paragraph-title"><strong>Some peculiarities about my work.</strong></p>
+		<ul class="paragraph-list">
+			<li class="paragraph-item bio-paragraph">My university education was actually on Environmental Engineering.</li>
+			<li class="paragraph-item bio-paragraph">I take a special liking to creating infographics.</li>
+			<li class="paragraph-item bio-paragraph">I'm very interested in Bitcoin and love doing work related to the technology.</li>
+			<li class="paragraph-item bio-paragraph">The last 2 items were combined in a project called <a class="pink-link" href="http://bitcoindesigned.com/">bitcoindesigned</a>.</li>
+		</ul>
 	</div>
 	<div id="infographics-cta">
-		<p>I selected some of my infographics for you to see:</p>
-		<a id="infographics-button" href="{{ url_for('main.infograficos') }}">Go to infographics <img id="arrow" src="{{ url_for('static', filename='img/arrow.svg') }}" alt="">
-		</a>
+		<p>I've also selected some of my past work for you to see:</p>
+		<div class="button-container">
+			<a id="infographics-button" href="{{ url_for('main.portfolio') }}">Go to portfolio <img class="arrow" src="{{ url_for('static', filename='img/arrow-white.svg') }}" alt="">
+			</a>
+		</div>
 	</div>
 {% endblock content %}
