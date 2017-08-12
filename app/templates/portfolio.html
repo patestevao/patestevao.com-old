@@ -1,198 +1,205 @@
 {% extends 'base.html' %}
 
 {% block content %}
-	<div class="portfolio-section">
-		<h3 class="portfolio-title"><a class="pink-link" href="https://dribbble.com/patestevao">Dribble</a></h3>
-		<p>In my Dribbble profile, you'll be able to see some of my best shots.</p>
+	<div class="portfolio-row">
+		<div id="left-side">
+			<div class="portfolio-section">
+				<h3 class="portfolio-title"><a class="pink-link" href="https://dribbble.com/patestevao">Dribble</a></h3>
+				<p>In my Dribbble profile, you'll be able to see some of my best shots.</p>
+			</div>
+			<div class="portfolio-section">
+				<h3 class="portfolio-title"><a class="pink-link" href="https://www.behance.net/patestevao">Behance</a></h3>
+				<p>In my Behance, you'll see a more detailed presentation of a few projects.</p>
+			</div>
+			<div class="portfolio-section">
+				<h3 class="portfolio-title">Infographics</h3>
+				<p>I've also selected some of my favorite infographics here below:</p>
+			</div>
+			<ul id="infographics-list">
+				<li class="infographic-container">
+					<a href="//imgur.com/gkken5t">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-16.png') }}" alt="What is Augur?">
+							<div class="mask1">
+								<h4 class="small-title">What is Augur?</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/Vd4Nxmx">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-17.png') }}" alt="What is Monero?">
+							<div class="mask1">
+								<h4 class="small-title">What is Monero?</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/5Uur55A">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-18.png') }}" alt="What is Litecoin?">
+							<div class="mask1">
+								<h4 class="small-title">What is Litecoin?</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/Jxqq4Vn">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-15.png') }}" alt="An user's guide to BIP148 success">
+							<div class="mask1">
+								<h4 class="big-title">An user's guide to BIP148 success</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/u894B9n">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-8.png') }}" alt="Your company snapshot">
+							<div class="mask1">
+								<h4 class="small-title">Your company snapshot</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/yyDfyWg">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-9.png') }}" alt="Infográfico: Sim ou Não?">
+							<div class="mask1">
+								<h4 class="small-title">Infográfico: Sim ou Não?</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/s0ZyFcT">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-10.png') }}" alt="Yes means Yes">
+							<div class="mask1">
+								<h4 class="small-title">Yes means Yes</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/WNdqNC0">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-13.png') }}" alt="Commuting to and from the South Boston Waterfront">
+							<div class="mask1">
+								<h4 class="big-title">Commuting to and from the South Boston Waterfront</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/gVFUu71">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-14.png') }}" alt="What a green insurance company looks like?">
+							<div class="mask1">
+								<h4 class="big-title">What a green insurance company looks like?</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="http://txplab.github.io/infograficos-blockchainhub/infografico-landing-page/">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-2.png') }}" alt="O que é a tecnologia blockchain?">
+							<div class="mask1">
+								<h4 class="small-title">O que é a tecnologia blockchain?</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/a/tJyRQ">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-3.png') }}" alt="Is Bitcoin anonymous?">
+							<div class="mask1">
+								<h4 class="small-title">Is Bitcoin anonymous?</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/a/BCvZr">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-4.png') }}" alt="Bitcoin transaction life cycle">
+							<div class="mask1">
+								<h4 class="small-title">Bitcoin transaction life cycle</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/a/lF5Nz">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-5.png') }}" alt="What does it really mean to have bitcoins?">
+							<div class="mask1">
+								<h4 class="big-title">What does it really mean to have bitcoins?</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/a/3Qn9K">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-6.png') }}" alt="The Bitcoin roller coaster">
+							<div class="mask1">
+								<h4 class="small-title">The Bitcoin roller coaster</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/dO1RylR">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-7.png') }}" alt="Diagrama de segurança">
+							<div class="mask1">
+								<h4 class="small-title">Diagrama de segurança</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/l9GKebx">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-11.png') }}" alt="Why you should exchange your cash for Bitcoin now">
+							<div class="mask1">
+								<h4 class="big-title">Why you should exchange your cash for Bitcoin now</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/Hs5GiES">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-12.png') }}" alt="Big Data survey">
+							<div class="mask1">
+								<h4 class="small-title">Big Data survey infographic</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="infographic-container">
+					<a href="//imgur.com/uRmh6zT">
+						<div class="container1">
+							<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-1.png') }}" alt="TigoCTM - Cryptocurrency Teller Machine">
+							<div class="mask1">
+								<h4 class="big-title">TigoCTM - Cryptocurrency Teller Machine</h4>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="right-side">
+			{% include 'includes/navigation.html' %}
+		</div>
 	</div>
-	<div class="portfolio-section">
-		<h3 class="portfolio-title"><a class="pink-link" href="https://www.behance.net/patestevao">Behance</a></h3>
-		<p>In my Behance, you'll see a more detailed presentation of a few projects.</p>
-	</div>
-	<div class="portfolio-section">
-		<h3 class="portfolio-title">Infographics</h3>
-		<p>I've also selected some of my favorite infographics here below:</p>
-	</div>
-	<ul id="infographics-list">
-		<li class="infographic-container">
-			<a href="//imgur.com/gkken5t">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-16.png') }}" alt="What is Augur?">
-					<div class="mask1">
-						<h4 class="small-title">What is Augur?</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/Vd4Nxmx">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-17.png') }}" alt="What is Monero?">
-					<div class="mask1">
-						<h4 class="small-title">What is Monero?</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/5Uur55A">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-18.png') }}" alt="What is Litecoin?">
-					<div class="mask1">
-						<h4 class="small-title">What is Litecoin?</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/Jxqq4Vn">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-15.png') }}" alt="An user's guide to BIP148 success">
-					<div class="mask1">
-						<h4 class="big-title">An user's guide to BIP148 success</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/u894B9n">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-8.png') }}" alt="Your company snapshot">
-					<div class="mask1">
-						<h4 class="small-title">Your company snapshot</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/yyDfyWg">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-9.png') }}" alt="Infográfico: Sim ou Não?">
-					<div class="mask1">
-						<h4 class="small-title">Infográfico: Sim ou Não?</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/s0ZyFcT">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-10.png') }}" alt="Yes means Yes">
-					<div class="mask1">
-						<h4 class="small-title">Yes means Yes</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/WNdqNC0">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-13.png') }}" alt="Commuting to and from the South Boston Waterfront">
-					<div class="mask1">
-						<h4 class="big-title">Commuting to and from the South Boston Waterfront</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/gVFUu71">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-14.png') }}" alt="What a green insurance company looks like?">
-					<div class="mask1">
-						<h4 class="big-title">What a green insurance company looks like?</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="http://txplab.github.io/infograficos-blockchainhub/infografico-landing-page/">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-2.png') }}" alt="O que é a tecnologia blockchain?">
-					<div class="mask1">
-						<h4 class="small-title">O que é a tecnologia blockchain?</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/a/tJyRQ">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-3.png') }}" alt="Is Bitcoin anonymous?">
-					<div class="mask1">
-						<h4 class="small-title">Is Bitcoin anonymous?</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/a/BCvZr">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-4.png') }}" alt="Bitcoin transaction life cycle">
-					<div class="mask1">
-						<h4 class="small-title">Bitcoin transaction life cycle</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/a/lF5Nz">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-5.png') }}" alt="What does it really mean to have bitcoins?">
-					<div class="mask1">
-						<h4 class="big-title">What does it really mean to have bitcoins?</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/a/3Qn9K">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-6.png') }}" alt="The Bitcoin roller coaster">
-					<div class="mask1">
-						<h4 class="small-title">The Bitcoin roller coaster</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/dO1RylR">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-7.png') }}" alt="Diagrama de segurança">
-					<div class="mask1">
-						<h4 class="small-title">Diagrama de segurança</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/l9GKebx">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-11.png') }}" alt="Why you should exchange your cash for Bitcoin now">
-					<div class="mask1">
-						<h4 class="big-title">Why you should exchange your cash for Bitcoin now</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/Hs5GiES">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-12.png') }}" alt="Big Data survey">
-					<div class="mask1">
-						<h4 class="small-title">Big Data survey infographic</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-		<li class="infographic-container">
-			<a href="//imgur.com/uRmh6zT">
-				<div class="container1">
-					<img class="infographic-sample" src="{{ url_for ('static', filename='img/infographics-sample/infographics-sample-1.png') }}" alt="TigoCTM - Cryptocurrency Teller Machine">
-					<div class="mask1">
-						<h4 class="big-title">TigoCTM - Cryptocurrency Teller Machine</h4>
-					</div>
-				</div>
-			</a>
-		</li>
-	</ul>
 {% endblock content %}

@@ -9,50 +9,6 @@ window.onload = function() {
     }
 };
 
-// window.addEventListener('resize', function() {
-//     var nav = document.getElementById('navigation');
-//     if (window.innerWidth <= 670) {
-//         nav.parentNode.removeChild(nav);
-//         createMobileNav();
-//     } else if (window.innerWidth > 670) {
-//         var mobileNav = document.getElementById('mobile-nav');
-//         mobileNav.parentNode.removeChild(mobileNav);
-//         recreateOriginalNav();
-//     }
-// });
-
-function recreateOriginalNav() {
-    var newNav = document.createElement('nav');
-    newNav.setAttribute('id','navigation');
-    var navList = document.createElement('ul');
-    navList.setAttribute('id', 'nav-list');
-    var homeItem = document.createElement('li');
-    homeItem.classList.add('nav-item');
-    var homeLink = document.createElement('a');
-    homeLink.classList.add('nav-link');
-    var homeText = document.createTextNode('Home');
-    homeLink.setAttribute('href', '/');
-    var infographicItem = document.createElement('li');
-    infographicItem.classList.add('nav-item');
-    var infographicLink = document.createElement('a');
-    // var infographicLink = document.createElement('a');s
-    infographicLink.classList.add('nav-link');
-    var infographicText = document.createTextNode('Portfolio');
-    infographicLink.setAttribute('href', '/infograficos');
-
-    homeLink.appendChild(homeText);
-    homeItem.appendChild(homeLink);
-    infographicLink.appendChild(infographicText);
-    infographicItem.appendChild(infographicLink);
-    navList.appendChild(homeItem);
-    navList.appendChild(infographicItem);
-    newNav.appendChild(navList);
-
-    var contact = document.getElementById('contact-container');
-    var right = document.getElementById('right');
-    right.insertBefore(newNav, contact);
-}
-
 function createMobileNav() {
     var mobileNavDiv = document.createElement('div');
     mobileNavDiv.setAttribute('id','mobile-nav');
@@ -60,7 +16,7 @@ function createMobileNav() {
     mobileNavList.classList.add('mobile-nav-list');
     mobileNavDiv.appendChild(mobileNavList);
     var mobileNavArray = ['Home', 'Portfolio', 'Contact'];
-    var hrefArray = ["/", "/infograficos",
+    var hrefArray = ["/", "/portfolio",
         "#contact-container" ];
 
 
