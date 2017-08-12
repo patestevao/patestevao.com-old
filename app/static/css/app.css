@@ -8,7 +8,7 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  text-align: center;
+  text-align: left;
   height: 100%;
   min-height: 100vh;
   line-height: 1.5;
@@ -31,81 +31,133 @@ p {
   font-weight: 300;
 }
 
-#left {
-  margin: 0;
-  height: 100%;
-  min-height: 100%;
-  position: absolute;
-  left: 0;
-  width: 70vw;
-  padding-left: 10vw;
-  padding-right: 10vw;
-  padding-top: 3em;
-  padding-bottom: 0;
-  text-align: left;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  min-height: 50vh;
 }
 
-#right {
+#upper-left {
+  flex-grow: 1;
+  flex-basis: 50%;
+  background-color: #fff;
+  padding: 3em 2em;
   box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  margin: 0;
-  height: 100%;
-  min-height: 100vh;
+}
+
+#upper-right {
+  flex-grow: 1;
+  flex-basis: 50%;
+  background-color: #ff0055;
+  padding: 3em 2em;
+  box-sizing: border-box;
+}
+
+#lower-left {
+  flex-grow: 1;
+  flex-basis: 50%;
+  background-color: #FAF9F6;
+  padding: 3em 2em;
+  box-sizing: border-box;
+}
+
+#lower-right {
+  flex-grow: 1;
+  flex-basis: 50%;
+  background-image: url('../img/perfil-large.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+
+#left-side {
+  width: 60%;
+  padding: 3em;
+  box-sizing: border-box;
+}
+
+#right-side {
+  width: 40%;
+  background-color: #ff0055;
+  padding: 3em;
+  box-sizing: border-box;
   position: fixed;
   right: 0;
-  /*background: linear-gradient(to bottom, #dd2476, #ff512f);*/
-  background-color: #ff0055;
-  width: 30vw;
-  padding-top: 3em;
-  padding-bottom: 2em;
+  top: 0;
+  height: 100vh;
 }
 
-@media(max-width: 950px) {
-  #left {
-    width:60vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-  #right {
-    width: 40vw;
+@media(max-width: 1350px) {
+  #lower-right {
+    background-image: url('../img/perfil-medium.jpg');
   }
 }
 
-@media (max-width: 670px) {
-  #left, #right {
-    width: 100vw;
-    display: block;
+@media (max-width: 950px) {
+  #right-side, #left-side {
+    padding: 3em 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  #upper-left, #upper-right, #lower-left, #lower-right {
+    flex-basis: 100%;
+  }
+
+  #upper-left {
+    order: 1;
+  }
+
+  #lower-left {
+    order: 3;
+  }
+
+  #upper-right {
+    order: 4;
+  }
+
+  #lower-right {
+    height: 20em;
+    order: 2;
+    background-image: url('../img/perfil-small.jpg');
+  }
+
+  .portfolio-row {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  #right-side {
     position: relative;
     height: auto;
-    min-height: auto;
   }
-  #left {
-    padding-bottom: 1em;
-    padding-top: 1.5em;
-  }
-  #right {
-    padding-top: 2em;
+
+  #right-side, #left-side {
+    flex-basis: 100%;
   }
 }
-@media (max-width:500px) {
-  #left {
-    padding-left: 2em;
-    padding-right: 2em;
-  }
-}
-@media (max-width:380px) {
-  #left {
-    padding-left: 1em;
-    padding-right: 1em;
+
+@media (max-width: 400px) {
+  #upper-left, #upper-right, #lower-left, #lower-right, #right-side, #left-side {
+    padding: 3em 1em;
   }
 }
 
 #navigation {
   text-transform: uppercase;
   color: #fff;
-  font-size: 1.1em;
+  font-size: 1.5em;
+  margin-bottom: 4em;
 }
 @media (max-width: 670px) {
   #navigation {
@@ -125,27 +177,10 @@ p {
 
 #contact-container {
   text-align: left;
-  padding-left: 2em;
-  padding-right: 0.5em;
   color: #fff;
   font-size: 1.1em;
-  margin-top: 50vh;
 }
-@media (max-height: 1050px) and (max-width: 1300px) {
-  #contact-container {
-    margin-top: 40vh;
-  }
-}
-@media (max-height: 635px) {
-  #contact-container {
-    margin-top: 45vh;
-  }
-}
-@media (max-height: 500px) {
-  #contact-container {
-    margin-top: 25vh;
-  }
-}
+
 @media (max-width: 670px) {
   #contact-container {
     margin-top: 0;
@@ -157,8 +192,7 @@ p {
   display: inline-block;
   padding: 0;
   margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-right: 30px;
 }
 
 .nav-link {
@@ -189,7 +223,8 @@ p {
 .contact-title {
   font-family: "Oswald", sans-serif;
   color: #fff;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  margin-top: 0;
 }
 
 .mail-item {
@@ -208,11 +243,9 @@ p {
 
 .contact-link {
   color: #fff;
-  /*font-weight: 300;*/
 }
 
 .contact-text {
-  /*font-weight: 300;*/
   font-size: 0.8em;
 }
 
@@ -258,19 +291,6 @@ p {
 
 /*index page style*/
 
-#picture {
-  height: 180px;
-  width: auto;
-  border-radius: 5px;
-  float: left;
-  box-shadow: 1px 1px 2px 1px rgba(0,0,0,0.1);
-}
-
-#presentation {
-  float: left;
-  margin-left: 1.5em;
-}
-
 .pink-link {
   color: #ff0055;
   transition: color 0.1s ease-in;
@@ -286,7 +306,9 @@ h1 {
   margin: 0;
   color: rgb(85,80,80);
   font-size: 2.6em;
-  margin-top: 0.2em;
+  margin-top: 0;
+  line-height: 1.2em;
+  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -298,12 +320,6 @@ h2 {
 }
 
 @media (max-width: 930px) {
-  #picture {
-    height: 140px;
-  }
-  h1 {
-    font-size: 2em;
-  }
   h2 {
     font-size: 1.4em;
   }
@@ -324,7 +340,7 @@ h2 {
 .bio-paragraph-title {
   color: rgb(85,80,80);
   font-size: 1.4em;
-  margin-top: 1.8em;
+  margin-top: 0;
   font-family: 'Oswald', sans-serif;
 }
 
@@ -408,20 +424,10 @@ h2 {
     padding-top: 0.5em;
   }
 
-  #picture {
-    display: none;
-  }
-
   .bio-paragraph {
     font-size: 1em;
   }
 
-  #presentation {
-    display: block;
-    float: none;
-    margin-left: 0;
-    margin-top: 1em;
-  }
   h2 {
     margin-top: 0.2em;
   }
@@ -491,6 +497,10 @@ h2 {
   .mobile-nav-link {
     font-size: 1em;
   }
+
+  h1 {
+    font-size: 2.2em;
+  }
 }
 
 @media(max-width: 330px) {
@@ -514,7 +524,6 @@ h2 {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  /*text-align: center;*/
   margin-bottom: 2em;
 }
 
@@ -538,7 +547,7 @@ h4 {
 
 .portfolio-title {
   font-family: 'Oswald', sans-serif;
-  font-size: 1.6em;
+  font-size: 1.8em;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -580,7 +589,6 @@ h4 {
   position: absolute;
   top:0;
   left:0;
-  /*background: linear-gradient(to bottom, #dd2476, #ff512f);*/
   background-color: #ff0055;
   opacity: 0;
   color: #fff;
@@ -678,14 +686,26 @@ h4 {
 #error-container {
   color: #555;
   text-align: left;
+  padding: 3em;
 }
 
 #error-title {
-  font-size: 1.8em;
+  font-size: 2.5em;
+  font-family: 'Oswald', sans-serif;
   color: #555;
   font-weight: 300;
   text-align: left;
   margin-top: 0;
+}
+
+@media (max-width: 500px) {
+  #error-container {
+    padding: 2em 1em;
+  }
+
+  #error-title {
+    font-size: 1.8em;
+  }
 }
 
 /*end error 404 page style*/

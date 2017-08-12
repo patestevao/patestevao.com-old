@@ -18,16 +18,15 @@
 	<meta content="Patrícia Estevão" name="author">
 	<meta content="Hi, I'm Patrícia Estevão." itemprop="name">
 	<meta content="I'm a UX and Product Designer." itemprop="description">
-	<meta content="{{ url_for('static', filename='img/quadrada.jpg') }}" itemprop="image">
+	<meta content="{{ url_for('static', filename='img/perfil-quadrada.jpg') }}" itemprop="image">
 
 	<!-- OG tags -->
 	<meta content="Patrícia Estevão" property="og:site_name">
 	<meta content="website" property="og:type">
-	<meta content="pt_BR" property="og:locale">
 	<meta content="Hi, I'm Patrícia Estevão" property="og:title">
 	<meta content="I'm a UX and Product Designer." property="og:description">
 	<meta content="//patestevao.com" property="og:url">
-	<meta content="{{ url_for('static', filename='img/quadrada.jpg') }}" property="og:image">
+	<meta content="{{ url_for('static', filename='img/perfil-quadrada.jpg') }}" property="og:image">
 
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -41,59 +40,7 @@
 	</script>
 </head>
 <body>
-	<div id="left">
 	{% block content %}
 	{% endblock content %}
-	</div>
-	<div id="right" class="right">
-		<nav id="navigation">
-			<ul id="nav-list">
-				<li class="nav-item"><a class="nav-link" href="{{ url_for('main.index') }}">Home</a></li>
-				<li class="nav-item"><a class="nav-link" href="{{ url_for('main.portfolio') }}">Portfolio</a></li>
-			</ul>
-		</nav>
-		<div id="contact-container">
-			<p class="contact-title">Contact me :)</p>
-			<ul id="mail-list">
-				<li class="mail-item"><img id="mail-img" src="{{ url_for('static', filename='img/mail.png')}}" alt=""></li>
-				<li class="mail-item"><a class="contact-link" href="mailto:contact@patestevao.com">contact@patestevao.com</a></li>
-			</ul>
-			<p class="contact-text"><strong>PGP:</strong> <a class="contact-link" href="{{ url_for('static', filename='patestevao.asc')}}">A386 CED7 90E2 715C 37EA 6145 BBD3 997C F194 482B</a></p>
-			<ul id="social-media-list">
-				<li class="social-media-item">
-					<a href="https://twitter.com/patestevao" class="social-media-link">
-						<img src="{{ url_for('static', filename='img/twitter.png') }}" alt="twitter" class="social-media-img">
-					</a>
-				</li>
-				<li class="social-media-item">
-					<a href="https://medium.com/@patestevao" class="social-media-link">
-						<img src="{{ url_for('static', filename='img/medium.png') }}" alt="medium" class="social-media-img">
-					</a>
-				</li>
-				<li class="social-media-item">
-					<a href="https://github.com/patestevao" class="social-media-link">
-						<img src="{{ url_for('static', filename='img/github.png') }}" alt="github" class="social-media-img">
-					</a>
-				</li>
-				<span class="line-2">
-					<li class="social-media-item">
-						<a href="https://www.behance.net/patestevao" class="social-media-link">
-							<img src="{{ url_for('static', filename='img/behance.png') }}" alt="behance" class="social-media-img">
-						</a>
-					</li>
-					<li class="social-media-item">
-						<a href="https://dribbble.com/patestevao" class="social-media-link">
-							<img src="{{ url_for('static', filename='img/dribbble.svg') }}" alt="dribbble" class="social-media-img">
-						</a>
-					</li>
-					<li class="social-media-item">
-						<a href="https://www.linkedin.com/in/patestevao/" class="social-media-link">
-							<img src="{{ url_for('static', filename='img/linkedin.png') }}" alt="linkedin" class="social-media-img">
-						</a>
-					</li>
-				</span>
-			</ul>
-		</div>
-	</div>
 </body>
 </html>
