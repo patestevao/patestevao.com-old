@@ -5,33 +5,21 @@ window.onload = function() {
 
     if (window.innerWidth <= 670) {
         nav.parentNode.removeChild(nav);
-        createMobileNav();
+        document.body.appendChild(nav);
+        mobileStyleNav();
     }
 };
 
-function createMobileNav() {
-    var mobileNavDiv = document.createElement('div');
-    mobileNavDiv.setAttribute('id','mobile-nav');
-    var mobileNavList = document.createElement('ul');
-    mobileNavList.classList.add('mobile-nav-list');
-    mobileNavDiv.appendChild(mobileNavList);
-    var mobileNavArray = ['Home', 'Portfolio', 'Contact'];
-    var hrefArray = ["/", "/portfolio",
-        "#contact-container" ];
-
-
-    for (var i = 0; i < mobileNavArray.length; i++) {
-        var item = mobileNavArray[i];
-        var mobileNavItem = document.createElement('li');
-        mobileNavItem.classList.add('mobile-nav-item');
-        var mobileNavLink = document.createElement('a');
-        mobileNavLink.classList.add('mobile-nav-link');
-        mobileNavLink.href = String(hrefArray[i]);
-        var mobileNavContent = document.createTextNode(item);
-        mobileNavLink.appendChild(mobileNavContent);
-        mobileNavItem.appendChild(mobileNavLink);
-        mobileNavList.appendChild(mobileNavItem);
-    }
-
-    document.body.appendChild(mobileNavDiv);
+function mobileStyleNav() {
+  document.getElementById('navigation').classList.add('mobile-nav');
+  document.getElementById('nav-list').classList.add('mobile-nav-list');
+  var navItems = document.getElementsByClassName('nav-item');
+  for (var i = 0; i < navItems.length; i++) {
+      navItems[i].classList.add('mobile-nav-item');
+  }
+  var navLinks = document.getElementsByClassName('nav-link');
+  for (var j = 0; j < navLinks.length; j++) {
+      navLinks[j].classList.add('mobile-nav-link');
+  }
+  document.getElementById('contact-item').style.display = "inline-block";
 }
