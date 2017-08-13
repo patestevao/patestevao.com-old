@@ -159,11 +159,6 @@ p {
   font-size: 1.5em;
   margin-bottom: 4em;
 }
-@media (max-width: 670px) {
-  #navigation {
-    margin-bottom: 4em;
-  }
-}
 
 #nav-list, #social-media-list, #mail-list {
   list-style: none;
@@ -440,12 +435,18 @@ h2 {
 
 /*mobile nav (js generated) style*/
 
-#mobile-nav {
+#contact-item {
+  display: none;
+}
+
+.mobile-nav {
   position: fixed;
   bottom:0;
   background-color: #ff0055;
   text-align: center;
   width: 100%;
+  margin-bottom: 0 !important;
+  font-size: 1rem !important;
 }
 
 .mobile-nav-list {
@@ -490,11 +491,11 @@ h2 {
 }
 
 @media(max-width: 400px) {
-  .mobile-nav-item {
+  .mobile-nav-item, .nav-item {
     margin: 0 0.5em;
   }
 
-  .mobile-nav-link {
+  .mobile-nav-link, .nav-link {
     font-size: 1em;
   }
 
@@ -504,11 +505,11 @@ h2 {
 }
 
 @media(max-width: 330px) {
-  .mobile-nav-item {
+  .mobile-nav-item, .nav-item {
     margin: 0 0.3em;
   }
 
-  .mobile-nav-link {
+  .mobile-nav-link, .nav-link {
     font-size: 0.9em;
   }
 }
