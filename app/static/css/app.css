@@ -157,7 +157,7 @@ p {
   text-transform: uppercase;
   color: #fff;
   font-size: 1.5em;
-  margin-bottom: 4em;
+  margin-bottom: 3.5em;
 }
 
 #nav-list, #social-media-list, #mail-list {
@@ -314,9 +314,51 @@ h2 {
   margin-top: 0.5em;
 }
 
+.knowledges {
+  font-size: 1.1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-top: 1.5em;
+}
+
+.knowledges ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: -0.2em;
+}
+
+.knowledges ul li {
+  display: inline-block;
+  margin-right: 8px;
+  margin-top: 4px;
+}
+
+.pink-separator {
+  color: #ff0055;
+}
+
 @media (max-width: 930px) {
   h2 {
     font-size: 1.4em;
+  }
+}
+
+@media (max-width: 600px) {
+  .knowledges ul {
+    list-style: square;
+  }
+
+  .knowledges ul li {
+    display: block;
+  }
+
+  .knowledges ul li.pink-separator {
+    display: none;
+  }
+
+  .knowledges p {
+    margin-top: 1.4em;
   }
 }
 
@@ -340,21 +382,21 @@ h2 {
 }
 
 #infographics-cta {
-  margin-top: 2em;
+  margin-top: 4em;
   color: rgb(85,80,80);
-  margin-bottom: 4em;
+  margin-bottom: 1em;
 }
 
 #infographics-cta p {
-  font-weight: 700;
+  /*font-weight: 700;*/
   font-size: 1.1em;
   margin-bottom: 1.8em;
 }
 
 .button-container {
   display: block;
-  margin-top: 3em;
-  margin-bottom: 2em;
+  margin-top: 2.5em;
+  /*margin-bottom: 2em;*/
 }
 
 #infographics-button {
