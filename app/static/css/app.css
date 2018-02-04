@@ -230,6 +230,30 @@ p {
   margin-right: 2px;
 }
 
+#hire-button-container {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#hire-button {
+  color: #ff0055;
+  background-color: #FAF9F6;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  text-decoration: none;
+  /* border: 2px solid #ff0055; */
+  border-radius: 5px;
+  padding: 12px 15px;
+  box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.1);
+}
+
+#hire-button:hover, #hire-button:focus {
+  background-color: #fff;
+  box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.3);
+}
+
 #mail-img {
   width: 28px;
   height: auto;
