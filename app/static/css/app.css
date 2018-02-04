@@ -73,6 +73,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  min-height: 35em;
 }
 
 #left-side {
@@ -98,9 +99,21 @@ p {
   }
 }
 
+@media (max-height: 1000px) {
+  #lower-right {
+    min-height: 25em;
+  }
+}
+
 @media (max-width: 950px) {
   #right-side, #left-side {
     padding: 3em 2em;
+  }
+}
+
+@media (max-height: 800px) {
+  #lower-right {
+    min-height: 0;
   }
 }
 
