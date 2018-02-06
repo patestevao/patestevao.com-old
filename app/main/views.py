@@ -11,3 +11,7 @@ def index():
 @main.route('/portfolio/')
 def portfolio():
 	return render_template('portfolio.html')
+
+@main.route('/hire-me/')
+def hireme():
+	return render_template('hireme.html')
