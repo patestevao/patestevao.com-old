@@ -73,6 +73,7 @@ p {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
+  min-height: 35em;
 }
 
 #left-side {
@@ -98,9 +99,21 @@ p {
   }
 }
 
+@media (max-height: 1000px) {
+  #lower-right {
+    min-height: 25em;
+  }
+}
+
 @media (max-width: 950px) {
   #right-side, #left-side {
     padding: 3em 2em;
+  }
+}
+
+@media (max-height: 800px) {
+  #lower-right {
+    min-height: 0;
   }
 }
 
@@ -228,6 +241,30 @@ p {
   display: inline-block;
   margin-left: 2px;
   margin-right: 2px;
+}
+
+#hire-button-container {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#hire-button {
+  color: #ff0055;
+  background-color: #FAF9F6;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  text-decoration: none;
+  /* border: 2px solid #ff0055; */
+  border-radius: 5px;
+  padding: 12px 15px;
+  box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.1);
+}
+
+#hire-button:hover, #hire-button:focus {
+  background-color: #fff;
+  box-shadow: 2px 2px 0px 2px rgba(0,0,0,0.3);
 }
 
 #mail-img {
