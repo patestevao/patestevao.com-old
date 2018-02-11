@@ -14,6 +14,7 @@ body {
   line-height: 1.5;
   padding: 0;
   position: relative;
+  color: rgb(85,80,80);
   background-color: #fcfcfc;
   background-repeat: repeat;
   background-size: auto;
@@ -346,10 +347,10 @@ h1 {
   font-family: 'Oswald', sans-serif;
   margin: 0;
   color: rgb(85,80,80);
-  font-size: 2.6em;
+  font-size: 3em;
   margin-top: 0;
   line-height: 1.2em;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
 }
 
 h2 {
@@ -360,55 +361,17 @@ h2 {
   margin-top: 0.5em;
 }
 
-.knowledges {
-  font-size: 1.1em;
-  font-family: 'Open Sans', sans-serif;
+.activities {
+  color: #777;
+  /* font-size: 1.4em; */
+  margin-top: 0;
   font-weight: 300;
-  margin-top: 1.5em;
-}
-
-.knowledges ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: -0.2em;
-}
-
-.knowledges ul li {
-  display: inline-block;
-  margin-right: 8px;
-  margin-top: 4px;
-}
-
-.pink-separator {
-  color: #ff0055;
+  margin-bottom: 2em;
 }
 
 @media (max-width: 930px) {
-  h2 {
-    font-size: 1.4em;
-  }
-
   #presentation {
     padding-right: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .knowledges ul {
-    list-style: square;
-  }
-
-  .knowledges ul li {
-    display: block;
-  }
-
-  .knowledges ul li.pink-separator {
-    display: none;
-  }
-
-  .knowledges p {
-    margin-top: 1.4em;
   }
 }
 
@@ -592,7 +555,11 @@ h2 {
   }
 
   h1 {
-    font-size: 2.2em;
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.4em;
   }
 }
 
