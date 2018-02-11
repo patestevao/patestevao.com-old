@@ -40,7 +40,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   height: auto;
-  min-height: 50vh;
+  min-height: 100vh;
 }
 
 .no-break {
