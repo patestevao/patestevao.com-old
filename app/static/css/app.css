@@ -29,6 +29,7 @@ img {
 
 p {
   font-weight: 300;
+  line-height: 1.8em;
 }
 
 .row {
@@ -40,6 +41,10 @@ p {
   flex-wrap: wrap;
   height: auto;
   min-height: 50vh;
+}
+
+.no-break {
+  display: inline-block;
 }
 
 #upper-left {
@@ -323,6 +328,10 @@ p {
 
 /*index page style*/
 
+#presentation {
+  padding-right: 2em;
+}
+
 .pink-link {
   color: #ff0055;
   transition: color 0.1s ease-in;
@@ -378,6 +387,10 @@ h2 {
 @media (max-width: 930px) {
   h2 {
     font-size: 1.4em;
+  }
+
+  #presentation {
+    padding-right: 0;
   }
 }
 
