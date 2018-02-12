@@ -596,12 +596,6 @@ h2 {
   margin-bottom: 2em;
 }
 
-#infographic-container {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
-
 h4 {
   font-size: 1.2em;
   font-weight: 400;
@@ -625,6 +619,7 @@ h4 {
   margin: 0;
   width: 300px;
   height: 300px;
+  max-width: 400px;
   padding: 0;
   margin-left: 1px;
   margin-right: 1px;
@@ -644,8 +639,8 @@ h4 {
 }
 
 .infographic-sample {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
   display: block;
   position: relative;
   opacity: 1;
