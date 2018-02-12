@@ -545,6 +545,15 @@ h2 {
   width: 100%;
 }
 
+@media (max-width: 670px) {
+  .mobile-nav-link::after {
+    content: none;
+  }
+  .mobile-nav-item {
+    padding-bottom: 10px;
+  }
+}
+
 @media(max-width: 400px) {
   .mobile-nav-item, .nav-item {
     margin: 0 0.5em;
