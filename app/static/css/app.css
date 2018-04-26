@@ -141,7 +141,7 @@ p {
   }
 
   #lower-right {
-    height: 20em;
+    height: 25em;
     order: 2;
     background-image: url('../img/perfil-small.jpg');
   }
@@ -170,6 +170,10 @@ p {
   #upper-left, #upper-right, #lower-left, #lower-right, #right-side, #left-side {
     padding: 3em 1em;
   }
+
+  #lower-right {
+    height: 12em;
+  }
 }
 
 #navigation {
@@ -183,10 +187,6 @@ p {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-#social-media-list {
-  margin-top: 20px;
 }
 
 #contact-container {
@@ -291,20 +291,20 @@ p {
   margin: 0;
   padding: 0;
   display: inline-block;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .social-media-link {
-  color: #fff;
+  color: #ff0055;
   text-decoration: none;
   display: block;
 }
 
 .social-media-img {
-  height: 25px;
-  width: 25px;
-  border: 2px solid rgba(255,255,255,0.5);
-  padding: 8px;
+  height: 28px;
+  width: 28px;
+  border: 2px solid rgba(255,0,85,1);
+  padding: 10px;
   border-radius: 5px;
   vertical-align: bottom;
   background-color: transparent;
@@ -313,11 +313,27 @@ p {
 
 .social-media-link:hover .social-media-img,
   .social-media-link:focus .social-media-img{
-  border: 2px solid rgba(255,255,255,0.2);
-  background-color: rgba(255,255,255,0.3);
+  background-color: #FAF9F6;
+  box-shadow: 1px 1px 2px rgba(85,80,80,0.5);
 }
 
-@media (max-width: 1300px) {
+#social-media-list-title {
+  margin-bottom: 1em;
+  margin-top: 1.5em
+}
+
+@media (max-width: 400px) {
+  .social-media-item {
+    margin-right: 8px;
+  }
+
+  .social-media-img {
+    height: 25px;
+    width: 25px;
+  }
+}
+
+@media (max-width: 315px) {
   .line-2 {
     display: inline-block;
     margin-top: 12px;
@@ -347,7 +363,7 @@ h1 {
   font-family: 'Oswald', sans-serif;
   margin: 0;
   color: rgb(85,80,80);
-  font-size: 3em;
+  font-size: 3.4em;
   margin-top: 0;
   line-height: 1.2em;
   margin-bottom: 0.4em;
@@ -357,7 +373,7 @@ h2 {
   font-family: 'Oswald', sans-serif;
   margin: 0;
   color: rgb(85,80,80);
-  font-size: 1.6em;
+  font-size: 2em;
   margin-top: 0.5em;
 }
 
@@ -394,16 +410,8 @@ h2 {
   font-family: 'Oswald', sans-serif;
 }
 
-#infographics-cta {
-  margin-top: 4em;
-  color: rgb(85,80,80);
-  margin-bottom: 1em;
-}
-
-#infographics-cta p {
-  /*font-weight: 700;*/
+#relevant-links {
   font-size: 1.1em;
-  margin-bottom: 1.8em;
 }
 
 .button-container {
@@ -475,6 +483,10 @@ h2 {
   }
 
   .bio-paragraph {
+    font-size: 1em;
+  }
+
+  #relevant-links {
     font-size: 1em;
   }
 
