@@ -333,7 +333,7 @@ p {
   }
 }
 
-@media (max-width: 315px) {
+@media (max-width: 340px) {
   .line-2 {
     display: inline-block;
     margin-top: 12px;
