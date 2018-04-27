@@ -23,3 +23,19 @@ function mobileStyleNav() {
   }
   document.getElementById('contact-item').style.display = "inline-block";
 }
+
+// Smooth scrolling
+$(document).ready(function() {
+    $('a[href*="#"]').not('a[href="#"]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+            var target = $(this.hash);
+            console.log(target);
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 800);
+                return false;
+            }
+        }
+    });
+});
