@@ -26,12 +26,12 @@ if os.getenv('FLASK_CONFIG') == 'production':
     css = Bundle('css/normalize.css', 'css/app.css',
                  output='css/all.min.css', filters='cssmin')
     assets.register('css_all', css)
-    js = Bundle('js/main.js', output='js/all.min.js', filters='jsmin')
+    js = Bundle('js/jquery.min.js', 'js/main.js', output='js/all.min.js', filters='jsmin')
     assets.register('js_all', js)
 else:
     css = Bundle('css/normalize.css', 'css/app.css')
     assets.register('css_all', css)
-    js = Bundle('js/main.js')
+    js = Bundle('js/jquery.min.js', 'js/main.js')
     assets.register('js_all', js)
 
 

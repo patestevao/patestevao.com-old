@@ -1,25 +1,54 @@
-var originalNav = document.getElementById('navigation');
+$(document).ready(function() {
 
-window.onload = function() {
-    var nav = document.getElementById('navigation');
+    checkWindowWidth();
 
-    if (window.innerWidth <= 670) {
-        nav.parentNode.removeChild(nav);
-        document.body.appendChild(nav);
-        mobileStyleNav();
-    }
-};
+    $(window).resize(function() {
+        checkWindowWidth();
+    });
 
+    // Smooth scrolling
+    $('a[href*="#"]').not('a[href="#"]').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+            var target = $(this.hash);
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 800);
+                return false;
+            }
+        }
+    });
+});
+
+// Adds mobile style to navigation
 function mobileStyleNav() {
-  document.getElementById('navigation').classList.add('mobile-nav');
-  document.getElementById('nav-list').classList.add('mobile-nav-list');
-  var navItems = document.getElementsByClassName('nav-item');
-  for (var i = 0; i < navItems.length; i++) {
-      navItems[i].classList.add('mobile-nav-item');
-  }
-  var navLinks = document.getElementsByClassName('nav-link');
-  for (var j = 0; j < navLinks.length; j++) {
-      navLinks[j].classList.add('mobile-nav-link');
-  }
-  document.getElementById('contact-item').style.display = "inline-block";
+    $('#navigation').addClass('mobile-nav');
+    $('#nav-list').addClass('mobile-nav-list');
+    $('.nav-item').addClass('mobile-nav-item');
+    $('.nav-link').addClass('mobile-nav-link');
+    $('#contact-item').css('display', 'inline-block');
+}
+
+// Adds desktop style to navigation
+function desktopStyleNav() {
+    $('#navigation').removeClass('mobile-nav');
+    $('#nav-list').removeClass('mobile-nav-list');
+    $('.nav-item').removeClass('mobile-nav-item');
+    $('.nav-link').removeClass('mobile-nav-link');
+    $('#contact-item').css('display', 'none');
+}
+
+// Checks window size, repositions nav element
+// and calls appropriate style function
+function checkWindowWidth() {
+    if ($(window).width() <= 800) {
+        var nav = $('#navigation').detach();
+        $('body').append(nav);
+        mobileStyleNav();
+    } else {
+        if ($('#contact-item').css('display') == 'inline-block') {
+            $('#nav-container').append($('#navigation').detach());
+            desktopStyleNav();
+        }
+    }
 }

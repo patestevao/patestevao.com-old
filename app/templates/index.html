@@ -6,13 +6,39 @@
 			<div id="presentation">
 				<h1>Patrícia Estevão</h1>
 				<h2 class="activities">UX Designer and Consultant</h2>
-				<div id="infographics-cta">
-					<p>Here's some of my past work:</p>
-					<div class="button-container">
-						<a id="infographics-button" href="{{ url_for('main.portfolio') }}">Go to portfolio <img class="arrow" src="{{ url_for('static', filename='img/arrow-white.svg') }}" alt="">
+			</div>
+			<div id="relevant-links">
+				<p><a class="pink-link" href="{{ url_for('main.portfolio') }}">Go to my portfolio ></a></p>
+				<p id="social-media-list-title">Or follow me around the web:</p>
+				<ul id="social-media-list">
+					<li class="social-media-item">
+						<a href="https://twitter.com/patestevao" class="social-media-link">
+							<img src="{{ url_for('static', filename='img/twitter.png') }}" alt="twitter" class="social-media-img">
 						</a>
-					</div>
-				</div>
+					</li>
+					<li class="social-media-item">
+						<a href="https://medium.com/@patestevao" class="social-media-link">
+							<img src="{{ url_for('static', filename='img/medium.png') }}" alt="medium" class="social-media-img">
+						</a>
+					</li>
+					<li class="social-media-item">
+						<a href="https://github.com/patestevao" class="social-media-link">
+							<img src="{{ url_for('static', filename='img/github.png') }}" alt="github" class="social-media-img">
+						</a>
+					</li>
+					<span class="line-2">
+						<li class="social-media-item">
+							<a href="https://www.behance.net/patestevao" class="social-media-link">
+								<img src="{{ url_for('static', filename='img/behance.png') }}" alt="behance" class="social-media-img">
+							</a>
+						</li>
+						<li class="social-media-item">
+							<a href="https://dribbble.com/patestevao" class="social-media-link">
+								<img src="{{ url_for('static', filename='img/dribbble.svg') }}" alt="dribbble" class="social-media-img">
+							</a>
+						</li>
+					</span>
+				</ul>
 			</div>
 		</div>
 		<div id="upper-right">
