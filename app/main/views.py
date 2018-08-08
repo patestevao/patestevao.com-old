@@ -1,4 +1,4 @@
-from flask import render_template
+from flask import render_template, redirect, url_for
 
 from . import main
 
@@ -7,11 +7,11 @@ from . import main
 def index():
     return render_template('index.html')
 
+@main.route('/work/')
+def work():
+	return render_template('work.html')
 
 @main.route('/portfolio/')
 def portfolio():
-	return render_template('portfolio.html')
+	return redirect(url_for('main.work')), 301
 
-@main.route('/hire-me/')
-def hireme():
-	return render_template('hireme.html')
