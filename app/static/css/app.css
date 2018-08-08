@@ -48,6 +48,10 @@ p {
   display: inline-block;
 }
 
+.block-element {
+  display: block;
+}
+
 #upper-left {
   flex-grow: 1;
   flex-basis: 50%;
