@@ -41,7 +41,7 @@ function desktopStyleNav() {
 // Checks window size, repositions nav element
 // and calls appropriate style function
 function checkWindowWidth() {
-    if ($(window).width() <= 800) {
+    if ($(window).width() <= 840) {
         var nav = $('#navigation').detach();
         $('body').append(nav);
         mobileStyleNav();
